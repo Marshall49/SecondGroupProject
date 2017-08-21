@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/Marshall49/SecondGroupProject/issues"
   },
-  "homepage": "https://github.com/Marshall49/SecondGroupProject#readme"
+  "homepage": "https://github.com/Marshall49/SecondGroupProject#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "path": "^0.12.7",
+    "sequelize": "^4.6.0"
+  }
 }
