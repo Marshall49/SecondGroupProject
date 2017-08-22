@@ -18,7 +18,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // Static directory
 app.use(express.static("public"));
 
-var db = require("./");
+var db = require("./models");
 
 
 
