@@ -9,29 +9,64 @@ background-size: cover;
 }
 
 #nav-links {
-  float: right;
-  padding-top: 29px;
-  width: 50%;
-  display: inline-block;
+  /*float: right;*/
+  text-align: center;
+  padding-top: 23px;
+  /*width: 100%;*/
+  /*display: inline-block;*/
+  /*padding-left: 100px;*/
 }
 
 img {
   float: left;
-  padding-top: 15px;
+  padding-top: 1px;
   width: 50%;
   display: inline-block;
 }
 
 .name {
   font-size: 25px;
+  font-weight: bold;
   color: white;
   margin-left: 12%;
-  font-family: 'Merriweather', serif;
+  font-family: 'Varela Round', sans-serif;
   /*text-shadow: 2px 2px black;*/
   position: relative;
   width: 30%;
   display: inline-block;
-  padding-top: 55px;
+  padding-top: 42px;
+}
+
+.social-icons {
+  float: right;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
 }
 
 .navbar {
@@ -42,36 +77,36 @@ img {
 }
 
 ul {
-  float: right;
+  /*padding-right: 100px;*/
   background-color: none;
-  font-size: 25px;
-  font-family: 'Merriweather', serif;
+  font-size: 45px;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .links:link {
-  padding-top: 35px;
+  padding-top: 30px;
 
 
 }
 
 .links {
-  padding-top: 35px;
+  padding-top: 30px;
 
 
 }
 
 .links:visited {
-  padding-top: 35px;
+  padding-top: 30px;
   color: white;
 }
 
 .links:hover {
-  padding-top: 35px;
+  padding-top: 30px;
   color: white;
 }
 
 .links:active {
-  padding-top: 35px;
+  padding-top: 30px;
   color: white;
 }
 
@@ -99,10 +134,33 @@ a:hover {
 .links-signup {
   background-color: #a9fd00;
   border-radius: 20px;
-  font-size: 15px;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .links-login {
-  font-size: 15px;
+  background-color: white;
+  font-size: 40px;
+  border-radius: 20px;
+  color: #a9fd00;
+  font-weight: bold;
+}
+
+/*//End of Navbar*/
+
+
+/*//Title*/
+
+.title {
+  font-size: 90px;
+  font-weight: bold;
+  font-family: 'Varela Round', sans-serif;
+  display: inline-block;
+  padding-top: 200px;
   color: white;
+  padding-left: 80px;
+}
+
+b {
+  color: #a9fd00;
 }
