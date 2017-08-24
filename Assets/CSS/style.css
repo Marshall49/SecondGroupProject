@@ -1,11 +1,11 @@
 body {
-background-color: #DCDCDC;
+background-color: #333333;
 background-size: cover;
 }
 
 #logo {
+  float: left;
   position: fixed;
-  padding-left: 40px;
 }
 
 #nav-links {
@@ -13,6 +13,25 @@ background-size: cover;
   padding-top: 29px;
   width: 50%;
   display: inline-block;
+}
+
+img {
+  float: left;
+  padding-top: 15px;
+  width: 50%;
+  display: inline-block;
+}
+
+.name {
+  font-size: 25px;
+  color: white;
+  margin-left: 12%;
+  font-family: 'Merriweather', serif;
+  /*text-shadow: 2px 2px black;*/
+  position: relative;
+  width: 30%;
+  display: inline-block;
+  padding-top: 55px;
 }
 
 .navbar {
@@ -78,7 +97,7 @@ a:hover {
 }
 
 .links-signup {
-  background-color: #00BFFF;
+  background-color: #a9fd00;
   border-radius: 20px;
   font-size: 15px;
 }
