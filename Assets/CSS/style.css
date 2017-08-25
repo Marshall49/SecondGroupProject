@@ -8,14 +8,6 @@ background-size: cover;
   position: fixed;
 }
 
-#nav-links {
-  /*float: right;*/
-  text-align: center;
-  padding-top: 23px;
-  /*width: 100%;*/
-  /*display: inline-block;*/
-  /*padding-left: 100px;*/
-}
 
 img {
   float: left;
@@ -37,37 +29,107 @@ img {
   padding-top: 42px;
 }
 
-.social-icons {
-  float: right;
+@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+.social-btns .btn.facebook .fa {
+  margin: -7px;
+  margin-bottom: 5px;
+  color: #3b5998;
+}
+.social-btns .btn.twitter:before {
+  background-color: #3cf;
+}
+.social-btns .btn.twitter .fa {
+  margin: -7px;
+  margin-bottom: 5px;
+  color: #3cf;
 }
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
+.social-btns .btn.github:before {
+  background-color: black;
+}
+.social-btns .btn.github .fa {
+  margin: -7px;
+  margin-bottom: 5px;
+  color: black;
 }
 
-.fa:hover {
-    opacity: 0.7;
+.social-btns .btn.linkedin:before {
+  background-color: #007bb5;
+}
+.social-btns .btn.linkedin .fa {
+  margin: -7px;
+  margin-bottom: 5px;
+  color: #007bb5;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.social-btns {
+  height: 30px;
+  margin: auto;
+  font-size: 0;
+  /*text-align: center;*/
+  padding-left: 850px;
+  position: absolute;
+  top: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  opacity: 0.99;
+}
+.social-btns .btn:before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 38px;
+  vertical-align: middle;
 }
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
 
 .navbar {
   position: absolute;
@@ -81,32 +143,42 @@ ul {
   background-color: none;
   font-size: 45px;
   font-family: 'Varela Round', sans-serif;
+  text-decoration: none;
+}
+
+/*.links:link {
+  padding-top: 30px;
+  text-decoration: none;
+
+
+}*/
+#nav-links {
+  text-align: center;
+  padding-top: 23px;
 }
 
 .links:link {
-  padding-top: 30px;
-
-
-}
-
-.links {
-  padding-top: 30px;
+  padding-top: 15px;
+  text-decoration: none;
 
 
 }
 
 .links:visited {
-  padding-top: 30px;
+  padding-top: 15px;
   color: white;
+  text-decoration: none;
 }
 
 .links:hover {
-  padding-top: 30px;
+  padding-top: 15px;
+  text-decoration: none;
   color: white;
 }
 
 .links:active {
-  padding-top: 30px;
+  padding-top: 15px;
+  text-decoration: none;
   color: white;
 }
 
@@ -124,6 +196,7 @@ li a {
 
 ul:hover:not(.links) {
   background-color: none;
+  text-decoration: none;
 }
 
 a:hover {
@@ -131,20 +204,25 @@ a:hover {
   color: white;
 }
 
-.links-signup {
+#links-signup {
   background-color: #a9fd00;
   border-radius: 20px;
   font-size: 40px;
   font-weight: bold;
+  text-decoration: none;
 }
 
-.links-login {
+#links-login {
   background-color: white;
   font-size: 40px;
   border-radius: 20px;
   color: #a9fd00;
   font-weight: bold;
+  text-decoration: none;
 }
+
+
+
 
 /*//End of Navbar*/
 
