@@ -1,6 +1,9 @@
 body {
-background-color: #333333;
+background-image: url("../Images/running2.png");
 background-size: cover;
+background-repeat: none;
+z-index: 2;
+background-color: black;
 }
 
 #logo {
@@ -17,7 +20,7 @@ img {
 }
 
 .name {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   color: white;
   margin-left: 12%;
@@ -26,7 +29,7 @@ img {
   position: relative;
   width: 30%;
   display: inline-block;
-  padding-top: 42px;
+  padding-top: 40px;
 }
 
 @import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
@@ -50,16 +53,16 @@ img {
   background-color: #3b5998;
 }
 .social-btns .btn.facebook .fa {
-  margin: -7px;
-  margin-bottom: 5px;
+  margin: -10px;
+  margin-bottom: 12px;
   color: #3b5998;
 }
 .social-btns .btn.twitter:before {
   background-color: #3cf;
 }
 .social-btns .btn.twitter .fa {
-  margin: -7px;
-  margin-bottom: 5px;
+  margin: -10px;
+  margin-bottom: 12px;
   color: #3cf;
 }
 
@@ -67,8 +70,8 @@ img {
   background-color: black;
 }
 .social-btns .btn.github .fa {
-  margin: -7px;
-  margin-bottom: 5px;
+  margin: -10px;
+  margin-bottom: 12px;
   color: black;
 }
 
@@ -76,8 +79,8 @@ img {
   background-color: #007bb5;
 }
 .social-btns .btn.linkedin .fa {
-  margin: -7px;
-  margin-bottom: 5px;
+  margin: -10px;
+  margin-bottom: 15px;
   color: #007bb5;
 }
 .social-btns .btn:focus:before,
@@ -106,8 +109,8 @@ img {
 .social-btns .btn {
   display: inline-block;
   background-color: #fff;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   line-height: 50px;
   margin: 0 10px;
   text-align: center;
@@ -205,29 +208,28 @@ a:hover {
 }
 
 #links-signup {
-  background-color: #a9fd00;
+  background-color: #007bb5;
   border-radius: 20px;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: bold;
   text-decoration: none;
+  color: white;
 }
 
 #links-login {
-  background-color: white;
-  font-size: 40px;
+  background-color: #007bb5;
+  font-size: 28px;
   border-radius: 20px;
-  color: #a9fd00;
+  color: white;
   font-weight: bold;
   text-decoration: none;
 }
-
-
-
-
 /*//End of Navbar*/
 
 
 /*//Title*/
+
+
 
 .title {
   font-size: 90px;
@@ -236,9 +238,160 @@ a:hover {
   display: inline-block;
   padding-top: 200px;
   color: white;
-  padding-left: 80px;
+  padding-left: 9%;
+  padding-right: 9%;
+  text-align: center;
+  /*text-shadow: 1.5pxpx black;*/
 }
 
 b {
   color: #a9fd00;
+}
+
+/*//End of Title*/
+
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+#check {
+  display: block;
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+label {
+  display: block;
+  color: black;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#login {
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#footer {
+  padding: 16px;
+  border: none;
+  margin-left: 13px;
+  width: 89.8%;
+  background-color:#f1f1f1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+/*img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}*/
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+    margin: auto;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
 }
