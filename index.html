@@ -36,21 +36,95 @@
               <!-- //End of Navbar -->
 
             <!-- //Title -->
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="title">
-                <h1>The <b>#1</b> Stop Shop to <br> Track Your <b>Fitness</b> Goals</h1>
-              </div>
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title">
+                        <h1>The <b>#1</b> Stop Shop to <br> Track Your <b>Fitness</b> Goals</h1>
+                    </div>
               <div id="nav-links">
-              <ul>
-                <li><a id="links-login" class="links"href="#Login">Log In</a></li>
-                <li><a id="links-signup" class="links" href="#Signup">Sign Up</a></li>
-            </ul>
+                  <ul>
+                    <li><a id="links-login" onclick="document.getElementById('id01').style.display='block'" class="links"href="#Login">Log In</a></li>
+                    <li><a id="links-signup" onclick="document.getElementById('id02').style.display='block'" class="links" href="#Signup">Sign Up</a></li>
+                  </ul>
+              </div>
             </div>
           </div>
-          </div>
         </div>
+        <!-- //End of Title -->
+
+        <!-- //Login Modal Box -->
+        <div id="id01" class="modal">
+
+              <form class="modal-content animate" action="/action_page.php">
+                    <div class="imgcontainer">
+                          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <!-- <img src="Assets/Images/fitnesslogo1.png" alt="Avatar" class="avatar"> -->
+                    </div>
+
+              <div class="container">
+                      <label>Username</label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+
+                      <label>Password</label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <div id="login">
+              <button type="submit">Login</button>
+                  </div>
+
+                    <div id="check">
+                        <input type="checkbox" checked="checked"> Remember me
+                    </div>
+                  </div>
+
+            <div id="footer">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                          <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+
+            <!-- //SignUp Modal Box -->
+
+            <!-- <div id="id02" class="modal2">
+
+              <form class="modal-content animate" action="/action_page.php">
+                    <div class="imgcontainer">
+                          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span> -->
+              <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+                    <!-- </div> -->
+
+              <!-- <div class="container">
+                      <label><b>Create a Username</b></label>
+                  <input type="text" placeholder="Create Username" name="uname" required>
+
+                      <label><b>Create a Password</b></label>
+                  <input type="psw" placeholder="Create Password" name="psw" required>
+
+                      <label><b>Enter Weight</b></label>
+                  <input type="num" placeholder="Enter Current Weight" name="weight" required> -->
+
+                      <!-- <label><b>Enter Calories</b></label>
+                  <input type="num" placeholder="Enter Calories" name="calories" required>
+
+                      <label><b>Miles Ran</b></label>
+                  <input type="num" placeholder="Miles Ran" name="miles" required> -->
+
+
+              <!-- <button type="submit">Login</button>
+                    <div id="check">
+                        <input type="checkbox" checked="checked"> Remember me
+                    </div>
+              </div> -->
+
+            <!-- <div id="footer">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                          <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div> -->
+
 
 
 
