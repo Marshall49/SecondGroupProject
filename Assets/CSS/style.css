@@ -6,9 +6,16 @@ z-index: 2;
 background-color: black;
 }
 
+.navbar {
+  position: absolute;
+  top: 15px;
+  z-index: 2;
+  width: 90%;
+}
+
 #logo {
   float: left;
-  position: fixed;
+  position: absolute;
 }
 
 
@@ -132,30 +139,35 @@ img {
   font-size: 38px;
   vertical-align: middle;
 }
+/*//End of Navbar*/
 
 
-.navbar {
-  position: absolute;
-  top: 15px;
-  z-index: 2;
-  width: 90%;
+/*//Title*/
+
+.title {
+  font-size: 90px;
+  font-weight: bold;
+  font-family: 'Varela Round', sans-serif;
+  display: inline-block;
+  padding-top: 200px;
+  color: white;
+  padding-left: 9%;
+  padding-right: 9%;
+  text-align: center;
+}
+
+b {
+  color: #a9fd00;
 }
 
 ul {
-  /*padding-right: 100px;*/
   background-color: none;
   font-size: 45px;
   font-family: 'Varela Round', sans-serif;
   text-decoration: none;
 }
 
-/*.links:link {
-  padding-top: 30px;
-  text-decoration: none;
-
-
-}*/
-#nav-links {
+#go-links {
   text-align: center;
   padding-top: 23px;
 }
@@ -163,8 +175,6 @@ ul {
 .links:link {
   padding-top: 15px;
   text-decoration: none;
-
-
 }
 
 .links:visited {
@@ -208,169 +218,156 @@ a:hover {
 }
 
 #links-signup {
-  background-color: #007bb5;
+  background-color: white;
   border-radius: 20px;
   font-size: 28px;
   font-weight: bold;
   text-decoration: none;
-  color: white;
-}
-
-#links-login {
-  background-color: #007bb5;
-  font-size: 28px;
-  border-radius: 20px;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-}
-/*//End of Navbar*/
-
-
-/*//Title*/
-
-
-
-.title {
-  font-size: 90px;
-  font-weight: bold;
-  font-family: 'Varela Round', sans-serif;
-  display: inline-block;
-  padding-top: 200px;
-  color: white;
-  padding-left: 9%;
-  padding-right: 9%;
-  text-align: center;
-  /*text-shadow: 1.5pxpx black;*/
-}
-
-b {
   color: #a9fd00;
 }
 
+#links-login {
+  background-color: white;
+  font-size: 28px;
+  border-radius: 20px;
+  color: #a9fd00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#links-signup:hover {
+  color: #a9fd00;
+}
+
+#links-login:hover {
+  color: #a9fd00;
+}
 /*//End of Title*/
 
-input[type=text], input[type=password] {
-    width: 50%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid black;
-    box-sizing: border-box;
+/*//Login Modal*/
+
+#id01 {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  left: 37%;
+  top: 0;
+  width: 50%;
+  height: 54%;
+  overflow: auto;
+  background: #ffffff;
+  margin-top: 12%;
+
 }
 
-#check {
+.form-module {
+  z-index: 1;
+  left: 37%;
+  bottom: auto;
+  top: auto;
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  max-width: 320px;
+  width: 100%;
+  border-top: 5px solid #33b5e5;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+}
+.form-module .toggle {
+  cursor: pointer;
+  position: absolute;
+  top: -0;
+  right: -0;
+  background: #33b5e5;
+  width: 30px;
+  height: 30px;
+  margin: -5px 0 0;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+}
+.form-module .toggle .tooltip {
+  position: absolute;
+  top: 5px;
+  right: -65px;
   display: block;
-  font-family: 'Varela Round', sans-serif;
+  background: rgba(0, 0, 0, 0.6);
+  width: auto;
+  padding: 5px;
+  font-size: 10px;
+  line-height: 1;
+  text-transform: uppercase;
 }
-
-
-/* Set a style for all buttons */
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 50%;
-}
-
-label {
+.form-module .toggle .tooltip:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -5px;
   display: block;
-  color: black;
-  font-family: 'Varela Round', sans-serif;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid rgba(0, 0, 0, 0.6);
+}
+.form-module .form {
+  display: none;
+  padding: 45px;
+}
+.form-module .form:nth-child(2) {
+  display: block;
+}
+.form-module h2 {
+  margin: 0 0 20px;
+  color: #33b5e5;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+}
+.form-module input {
+  outline: none;
+  display: block;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  font-wieght: 400;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.form-module input:focus {
+  border: 1px solid #33b5e5;
+  color: #333333;
+}
+.form-module button {
+  cursor: pointer;
+  background: #33b5e5;
+  width: 100%;
+  border: 0;
+  padding: 10px 15px;
+  color: #ffffff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.form-module button:hover {
+  background: #178ab4;
+}
+.form-module .cta {
+  background: #f2f2f2;
+  width: 100%;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  color: #666666;
+  font-size: 12px;
+  text-align: center;
+}
+.form-module .cta a {
+  color: #333333;
+  text-decoration: none;
 }
 
-#login {
-  font-family: 'Varela Round', sans-serif;
-
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-#footer {
-  padding: 16px;
-  border: none;
-  margin-left: 13px;
-  width: 89.8%;
-  background-color:#f1f1f1;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-    font-family: 'Varela Round', sans-serif;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-}
-
-/*img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}*/
-
-.container {
-    padding: 16px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
-    font-family: 'Varela Round', sans-serif;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    padding-top: 60px;
-    margin: auto;
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: red;
-    cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
+.animate2 {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
@@ -385,8 +382,154 @@ span.psw {
     to {transform: scale(1)}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/*input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+}*/
+/*
+#check {
+  display: block;
+  font-family: 'Varela Round', sans-serif;
+}*/
+/* Set a style for all buttons */
+/*button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+
+}*/
+
+/*label {
+  display: block;
+  color: black;
+  font-family: 'Varela Round', sans-serif;
+}
+
+#login {
+  font-family: 'Varela Round', sans-serif;
+  width: 53.8%;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}*/
+
+/*#footer {
+  padding: 16px;
+  border: none;
+  margin-left: 13px;
+  width: 89.8%;
+  background-color:#f1f1f1;
+}*/
+
+/* Extra styles for the cancel button */
+/*.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    font-family: 'Varela Round', sans-serif;
+}*/
+
+/* Center the image and position the close button */
+/*.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}*/
+
+/*img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}*/
+
+/*.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+    font-family: 'Varela Round', sans-serif;
+}*/
+
+/* The Modal (background) */
+/*.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;*/
+    /*top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+    margin: auto;
+}*/
+
+/* Modal Content/Box */
+/*.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    /*border: 1px solid #888;*/
+    /*width: 50%; /* Could be more or less, depending on screen size */
+/*}*/
+
+/* The Close Button (x) */
+/*.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}*/
+
+/* Add Zoom Animation */
+/*.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}*/
+
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+/*@media screen and (max-width: 300px) {
     span.psw {
        display: block;
        float: none;
@@ -394,4 +537,169 @@ span.psw {
     .cancelbtn {
        width: 100%;
     }
+}*/
+
+/*//End of Login Modal*/
+
+
+/*input[type=text2], input[type=password2] {
+    width: 93%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
+
+.header2 {
+  text-align: center;
+  font-size: 26px;
+  color: black;
+  text-shadow: 1px 1px #a9fd00;
+  font-family: 'Varela Round', sans-serif;
+  padding-bottom: 3%;
+  border-radius: 20px;
+  background-color: white;
+
+}*/
+
+/*#check2 {
+
+  font-family: 'Varela Round', sans-serif;
+}*/
+/* Set a style for all buttons */
+/*button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 93%;
+}*/
+
+/*label {
+  display: block;
+  color: black;
+  font-family: 'Varela Round', sans-serif;
+}*/
+
+/*#signup2 {
+  font-family: 'Varela Round', sans-serif;
+
+}*/
+
+/*.signupbut {
+  width: 93%;
+}*/
+
+/*button:hover {
+    opacity: 0.8;
+}*/
+
+/*#footer2 {
+  padding: 16px;
+  border: none;
+  margin-left: 0.5px;
+  width: 93%;
+  background-color:#f1f1f1;
+}*/
+
+/* Extra styles for the cancel button */
+/*.cancelbtn2 {
+    width: 25%;
+    margin-left: 37%;
+    padding: 10px 18px;
+    background-color: #f44336;
+    font-family: 'Varela Round', sans-serif;
+}*/
+
+/* Center the image and position the close button */
+/*.imgcontainer2 {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}*/
+
+/*img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}*/
+
+/*.container2 {
+    padding: 16px;
+}
+
+span.psw2 {
+    float: right;
+    padding-top: 16px;
+    font-family: 'Varela Round', sans-serif;
+}*/
+
+/* The Modal (background) */
+/*.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+    margin: auto;
+}*/
+
+/* Modal Content/Box */
+/*.modal-content2 {
+    background-color: #D3D3D3;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 50%;
+    opacity: -4px;
+}*/
+
+/* The Close Button (x) */
+/*.close2 {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: red;
+    cursor: pointer;
+}*/
+
+/* Add Zoom Animation */
+/*.animate2 {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}*/
+
+/* Change styles for span and cancel button on extra small screens */
+/*@media screen and (max-width: 300px) {
+    span.psw2 {
+       display: block;
+       float: none;
+    }
+    .cancelbtn2 {
+       width: 100%;
+    }
+}*/
