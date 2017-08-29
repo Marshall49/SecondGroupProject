@@ -1,9 +1,9 @@
 -- deleting database if it already exists
-DROP DATABASE IF EXISTS fitness_app;
+DROP DATABASE IF EXISTS fitbot_db;
 -- creating new database for fitness app
-CREATE DATABASE fitness_app;
--- creating table called app_users using the fitness_app database
--- USE fitness_app;
+CREATE DATABASE fitbot_db;
+-- creating table called app_users using the fitbot_db database
+-- USE fitbot_db;
 -- CREATE TABLE app_userInfo(
 -- 	id INTEGER(11) AUTO_INCREMENT NOT NULL,
 -- 	first_name VARCHAR(50) NOT NULL,
@@ -18,21 +18,21 @@ CREATE DATABASE fitness_app;
 -- 	PRIMARY KEY (id)
 -- );
 
--- USE fitness_app;
+-- USE fitbot_db;
 -- CREATE TABLE user_weight(
 -- 	week INTEGER(11) AUTO_INCREMENT NOT NULL,
 -- 	current_weight INTEGER(3) NOT NULL,
 -- 	PRIMARY KEY (week)
 -- );
 
--- USE fitness_app;
+-- USE fitbot_db;
 -- CREATE TABLE user_caloriesBurned(
 -- 	week INTEGER(11) AUTO_INCREMENT NOT NULL,
 -- 	calories_burned INTEGER(3) NOT NULL,
 -- 	PRIMARY KEY (week)
 -- );
 
--- USE fitness_app;
+-- USE fitbot_db;
 -- CREATE TABLE user_mileage(
 -- 	week INTEGER(11) AUTO_INCREMENT NOT NULL,
 -- 	calories_burned INTEGER(3) NOT NULL,
