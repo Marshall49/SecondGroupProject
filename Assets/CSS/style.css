@@ -7,6 +7,7 @@ background-color: black;
 height: 100%;
 }
 
+
 .navbar {
   position: absolute;
   top: 15px;
@@ -343,7 +344,7 @@ span.psw {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background-color: #E6E6E6;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
@@ -408,6 +409,7 @@ input[type=text2], input[type=password2] {
 .header2 {
   text-align: center;
   font-size: 26px;
+  font-weight: bold;
   color: black;
   /*text-shadow: 1px 1px #a9fd00;*/
   font-family: 'Varela Round', sans-serif;
@@ -510,7 +512,7 @@ span.psw2 {
 
 /* Modal Content/Box */
 .modal-content2 {
-    background-color: white;
+    background-color: #E6E6E6;
     margin: 5% auto 15% auto;
     border: 1px solid #888;
     width: 50%;
