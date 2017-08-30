@@ -1,7 +1,7 @@
 -- creating new rows of user info
-INSERT INTO app_userInfo (first_name, last_name, user_name, city, state,
-zip_code, height_feet, height_inches, current_weight)
-VALUES ("John", "Davis", "JDavis", "Phoenix", "AZ", 85001, 5, 10, 163);
+INSERT INTO app_userInfo (first_name, last_name, user_name, password, city, state,
+zip_code, height, current_weight)
+VALUES ("John", "Davis", "JDavis", "Exercise", "Phoenix", "AZ", 85001, "5ft 10in" ,163);
 
 INSERT INTO user_caloriesBurned (user_name, calories_burned)
 VALUES ("JDavis", 1500);

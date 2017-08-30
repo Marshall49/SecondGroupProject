@@ -9,11 +9,12 @@ CREATE TABLE app_userInfo(
 	first_name VARCHAR(50) NOT NULL,
 	last_name VARCHAR(50) NOT NULL,
 	user_name VARCHAR(50) NOT NULL,
+	password VARCHAR(20) NOT NULL,
 	city VARCHAR(50) NOT NULL,
 	state VARCHAR(2) NOT NULL,
 	zip_code INTEGER(5) NOT NULL,
-	height_feet INTEGER(2) NOT NULL,
-	height_inches INTEGER(2) NOT NULL,
+	height VARCHAR(10) NOT NULL,
+	-- height_inches INTEGER(2) NOT NULL,
 	current_weight INTEGER(3) NOT NULL,
 	PRIMARY KEY (id)
 );
