@@ -20,13 +20,57 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   </head>
-  <body class="container">
+  <body class="container-fluid">
 
               <nav class="navbar navbar-light bg-faded">
-                  <a class="navbar-brand" href="#">
-                FitBot
+                  <a class="navbar-brand logo-link" href="#">
+
+                    <div class="logo">
+                    <img id="logo-image" src="Assets/Images/fitnesslogo1 (1).png">
+                    <span id="logo-text">Fit<b>B</b>ot</span>
+                    </div>
                   </a>
+
+                    <div id="nav-links">
+                        <ul>
+                          <li><a class="links" href="#Home">Home</a></li>
+                          <li> <div class="green-border"><a  onclick="document.getElementById('id02').style.display='block'" class="links" href="#Update">Update</a></div></li>
+                          <li><a class="links" href="#Map">Map</a></li>
+                      </ul>
+                  </div>
               </nav>
+
+
+              <div id="id02" class="modal2">
+
+                    <form class="modal-content2 animate" action="/action_page.php">
+                          <div class="imgcontainer2">
+                                <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">&times;</span>
+                    <!-- <img src="Assets/Images/fitnesslogo1.png" alt="Avatar" class="avatar"> -->
+                         </div>
+
+                    <div class="container2">
+                            <label>Total Calories Burned For Week</label>
+                        <input type="text2" placeholder="Total Calories Burned" name="uname2" required>
+
+                            <label>Total Miles Ran For Week</label>
+                        <input type="text2" placeholder="Total Miles Ran" name="uname2" required>
+
+                            <label>Current Weight</label>
+                        <input type="password2" placeholder="Current Weight" name="psw2" required>
+
+
+                          <div id="signup2">
+                    <button type="submit" class="signupbut">GO</button>
+                        </div>
+
+
+                  <div id="footer2">
+                          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
 
 
 
