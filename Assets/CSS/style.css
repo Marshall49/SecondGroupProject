@@ -7,7 +7,6 @@ background-color: black;
 height: 100%;
 }
 
-
 .navbar {
   position: absolute;
   top: 15px;
@@ -19,7 +18,6 @@ height: 100%;
   float: left;
   position: absolute;
 }
-
 
 img {
   float: left;
@@ -411,11 +409,8 @@ input[type=text2], input[type=password2] {
   font-size: 26px;
   font-weight: bold;
   color: black;
-  /*text-shadow: 1px 1px #a9fd00;*/
   font-family: 'Varela Round', sans-serif;
   padding-bottom: 3%;
-  /*border-radius: 10px;*/
-  /*background-color: white;*/
   text-decoration: underline;
 
 }
@@ -478,11 +473,6 @@ button:hover {
     margin: 24px 0 12px 0;
     position: relative;
 }
-
-/*img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}*/
 
 .container2 {
     padding: 16px;
