@@ -21,7 +21,10 @@ app.use(express.static("public"));
 var db = require("./models");
 
 
-
+app.use("/", routes);
+app.use("/update", routes);
+app.use("/create", routes);
+app.use("/delete", routes);
 
 
 
