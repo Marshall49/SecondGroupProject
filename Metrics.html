@@ -84,23 +84,47 @@
               </div>
             </div>
           </div>
+          <div id="caloriePlot"></div>
+          <div id="weightPlot"></div>
+          <div id="mileagePlot"></div>
+                <!--<script>
+                  var array1x = [];
+                  var array1y = [];
+                  var array2x = [];
+                  var array2y = [];
+                  for(i = 0; i < 5; i++) {
+                    array1x.push(i * 3);
+                    array1y.push(i);
+                  }
+                  for(i = 0; i < 5; i++) {
+                    array2x.push(15 - i);
+                    array2y.push(i);
+                  }                 
+                  var trace1 = {
+                    x: array1x, 
+                    y: array2x, 
+                    type: 'scatter'
+                  };
 
 
+                  var trace2 = {
+                    x: array1y, 
+                    y: array2y, 
+                    type: 'scatter'
+                  };
+                  
 
+                  var data1 = [trace1];
+                  var data2 = [trace2];
+                  Plotly.newPlot('caloriePlot', data1);
+                  Plotly.newPlot('weightPlot', data2);
 
-
-
-
-
-
-
-
-
-
+                </script>-->
     <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="Assets/Javascript/app.js"></script>
     <script src="Assets/Javascript/login.js"></script>
     <script src="Assets/Javascript/modal.js"></script>
+    <script src="Assets/Javascript/plots.js"></script>
   </body>
 </html>
