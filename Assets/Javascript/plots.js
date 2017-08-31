@@ -1,3 +1,4 @@
+//Define arrays for plot data sets
 var calorieX = [];
 var calorieY = [];
 var weightX = [];
@@ -91,8 +92,68 @@ var dataCalorie = [calorieTrace];
 var dataWeight = [weightTrace];
 var dataMileage = [mileageTrace];
 
-Plotly.newPlot('caloriePlot', dataCalorie);
+var calorieLayout = {
+  title: 'Calories Burned Per Week',
+  xaxis: {
+    title: 'Week',
+    titlefont: {
+      family: 'Courier New, monospace',
+      size: 18,
+      color: '#7f7f7f'
+    }
+  },
+  yaxis: {
+    title: 'Calories',
+    titlefont: {
+      family: 'Courier New, monospace',
+      size: 18,
+      color: '#7f7f7f'
+    }
+  }
+};
 
-Plotly.newPlot('weightPlot', dataWeight);
+var weightLayout = {
+  title: 'Weight Per Week',
+  xaxis: {
+    title: 'Week',
+    titlefont: {
+      family: 'Courier New, monospace',
+      size: 18,
+      color: '#7f7f7f'
+    }
+  },
+  yaxis: {
+    title: 'Weight',
+    titlefont: {
+      family: 'Courier New, monospace',
+      size: 18,
+      color: '#7f7f7f'
+    }
+  }
+};
 
-Plotly.newPlot('mileagePlot', dataMileage);
+var mileageLayout = {
+  title: 'Activity in Mileage Per Week',
+  xaxis: {
+    title: 'Week',
+    titlefont: {
+      family: 'Courier New, monospace',
+      size: 18,
+      color: '#7f7f7f'
+    }
+  },
+  yaxis: {
+    title: 'Mileage',
+    titlefont: {
+      family: 'Courier New, monospace',
+      size: 18,
+      color: '#7f7f7f'
+    }
+  }
+};
+
+Plotly.newPlot('caloriePlot', dataCalorie, calorieLayout);
+
+Plotly.newPlot('weightPlot', dataWeight, weightLayout);
+
+Plotly.newPlot('mileagePlot', dataMileage, mileageLayout);
