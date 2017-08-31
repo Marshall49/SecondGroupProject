@@ -15,116 +15,152 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   </head>
   <body class="container-fluid">
 
-              <nav class="navbar navbar-light bg-faded">
-                  <a class="navbar-brand logo-link" href="#">
+             <nav class="navbar navbar-light bg-faded">
+                 <a class="navbar-brand logo-link" href="#">
 
-                    <div class="logo">
-                        <img id="logo-image" src="Assets/Images/fitnesslogo1 (1).png">
-                        <span id="logo-text">Fit<b>B</b>ot</span>
-                    </div>
-                  </a>
+                   <div class="logo">
+                       <img id="logo-image" src="Assets/Images/fitnesslogo1 (1).png">
+                       <span id="logo-text">Fit<b>B</b>ot</span>
+                   </div>
+                 </a>
 
-                    <div id="nav-links">
-                        <ul>
-                          <li><a class="links" href="file:///Users/MalcolmStrong/SecondGroupProject/index.html?#Signup">Home</a></li>
-                          <li> <div class="green-border"><a  onclick="document.getElementById('id02').style.display='block'" class="links" href="#Update">Update</a></div></li>
-                          <li><a class="links" href="#Map">Map</a></li>
-                      </ul>
-                  </div>
-              </nav>
-
-
-              <div id="id02" class="modal2">
-
-                    <form class="modal-content2 animate" action="/action_page.php">
-                          <div class="imgcontainer2">
-                                <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">&times;</span>
-                         </div>
-
-                    <div class="container2">
-                            <label>Total Calories Burned For Week</label>
-                        <input type="text2" placeholder="Total Calories Burned" name="uname2" required>
-
-                            <label>Total Miles Ran For Week</label>
-                        <input type="text2" placeholder="Total Miles Ran" name="uname2" required>
-
-                            <label>Current Weight</label>
-                        <input type="password2" placeholder="Current Weight" name="psw2" required>
+                   <div id="nav-links">
+                       <ul>
+                         <li><a class="links" href="file:///Users/MalcolmStrong/SecondGroupProject/index.html?#Signup">Home</a></li>
+                         <li> <div class="green-border"><a  onclick="document.getElementById('id02').style.display='block'" class="links" href="#Update">Update</a></div></li>
+                         <li><a class="links" href="#Map">Map</a></li>
+                     </ul>
+                 </div>
+             </nav>
 
 
-                          <div id="signup2">
-                    <button type="submit" class="signupbut">Update</button>
+             <div id="id02" class="modal2">
+
+                   <form class="modal-content2 animate" action="/action_page.php">
+                         <div class="imgcontainer2">
+                               <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">&times;</span>
                         </div>
 
+                   <div class="container2">
+                           <label>Total Calories Burned For Week</label>
+                       <input type="text2" placeholder="Total Calories Burned" name="uname2" required>
 
-                  <div id="footer2">
-                          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
-                          </div>
-                      </form>
-                  </div>
-              </div>
+                           <label>Total Miles Ran For Week</label>
+                       <input type="text2" placeholder="Total Miles Ran" name="uname2" required>
 
-
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="foot">
-                          <span id="follow-text"><b>F</b>oll<b>o</b>w <b>U</b>s - - - - - - -  <b>></b></span>
-                <footer>
-                  <div class="social-btns">
-                    <a class="btn facebook" href="https://www.facebook.com/RunnersWorld/" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a class="btn twitter" href="https://twitter.com/runnersworld?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a class="btn github" href="https://github.com/Marshall49/SecondGroupProject" target="_blank"><i class="fa fa-github"></i></a>
-                    <a class="btn linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-                  </div>
-                </footer>
-                  <span id="follow-copyright">Copy<b>R</b>ight<b>.</b> <b>2017</b></span>
-              </div>
-            </div>
-          </div>
-          <div id="caloriePlot"></div>
-          <div id="weightPlot"></div>
-          <div id="mileagePlot"></div>
-                <!--<script>
-                  var array1x = [];
-                  var array1y = [];
-                  var array2x = [];
-                  var array2y = [];
-                  for(i = 0; i < 5; i++) {
-                    array1x.push(i * 3);
-                    array1y.push(i);
-                  }
-                  for(i = 0; i < 5; i++) {
-                    array2x.push(15 - i);
-                    array2y.push(i);
-                  }                 
-                  var trace1 = {
-                    x: array1x, 
-                    y: array2x, 
-                    type: 'scatter'
-                  };
+                           <label>Current Weight</label>
+                       <input type="password2" placeholder="Current Weight" name="psw2" required>
 
 
-                  var trace2 = {
-                    x: array1y, 
-                    y: array2y, 
-                    type: 'scatter'
-                  };
-                  
+                         <div id="signup2">
+                   <button type="submit" class="signupbut">Update</button>
+                       </div>
 
-                  var data1 = [trace1];
-                  var data2 = [trace2];
-                  Plotly.newPlot('caloriePlot', data1);
-                  Plotly.newPlot('weightPlot', data2);
 
-                </script>-->
+                 <div id="footer2">
+                         <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+                         </div>
+                     </form>
+                 </div>
+             </div>
+
+         <div id="caloriePlot"></div>
+         <div id="weightPlot"></div>
+         <div id="mileagePlot"></div>
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="foot">
+                         <span id="follow-text"><b>F</b>oll<b>o</b>w <b>U</b>s - - - - - - -  <b>></b></span>
+               <footer>
+                 <div class="social-btns">
+                   <a class="btn facebook" href="https://www.facebook.com/RunnersWorld/" target="_blank"><i class="fa fa-facebook"></i></a>
+                   <a class="btn twitter" href="https://twitter.com/runnersworld?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i></a>
+                   <a class="btn github" href="https://github.com/Marshall49/SecondGroupProject" target="_blank"><i class="fa fa-github"></i></a>
+                   <a class="btn linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                 </div>
+               </footer>
+                 <span id="follow-copyright">Copy<b>R</b>ight<b>.</b> <b>2017</b></span>
+             </div>
+           </div>
+         </div>
+
+               <script>
+                 var array1x = [];
+                 var array1y = [];
+                 var array2x = [];
+                 var array2y = [];
+                 var array3x = [];
+                 var array3y = [];
+                 for(i = 0; i < 5; i++) {
+                   array1x.push(i);
+                   array1y.push(i + 3);
+                 }
+
+                 for(i = 0; i < 5; i++) {
+                   array2x.push(i);
+                   array2y.push((15 - i) / 0.2 - i);
+                 }
+
+                 for(i = 0; i < 5; i++) {
+                   array3x.push(i);
+                   array3y.push((i * 1.5) - (i * 0.5) + 1);
+                 }
+                 var trace1 = {
+                   x: array1x,
+                   y: array2x,
+                   type: 'scatter'
+                 };
+
+
+                 var trace2 = {
+                   x: array2x,
+                   y: array2y,
+                   type: 'scatter'
+                 };
+
+                 var trace3 = {
+                   x: array3x,
+                   y: array3y,
+                   type: 'scatter'
+                 };
+
+                 var layout = {
+           title: 'EXAMPLE',
+           xaxis: {
+             title: 'X Axis',
+             titlefont: {
+               family: 'Courier New, monospace',
+               size: 18,
+               color: '#7f7f7f'
+             }
+           },
+           yaxis: {
+             title: 'Y Axis',
+             titlefont: {
+               family: 'Courier New, monospace',
+               size: 18,
+               color: '#7f7f7f'
+             }
+           }
+         };
+
+                 var data1 = [trace1];
+                 var data2 = [trace2];
+                 var data3 = [trace3];
+                 Plotly.newPlot('caloriePlot', data1, layout);
+                 Plotly.newPlot('weightPlot', data2, layout);
+                 Plotly.newPlot('mileagePlot', data3, layout);
+
+               </script>
     <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="Assets/Javascript/app.js"></script>
     <script src="Assets/Javascript/login.js"></script>
     <script src="Assets/Javascript/modal.js"></script>
-    <script src="Assets/Javascript/plots.js"></script>
+    <!-- <script src="Assets/Javascript/plots.js"></script> -->
   </body>
 </html>
