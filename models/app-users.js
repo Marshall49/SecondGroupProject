@@ -1,5 +1,21 @@
 module.exports = function(sequelize, DataTypes) {
-  var App_users = sequelize.define("app_users", {
+  var App_users = sequelize.define("App_users", {
+    first_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+
+    last_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
+
     user_name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -33,24 +49,24 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
-      len: [1] 
-      } 
+      len: [1]
+      }
     },
     height_feet: {
       type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
-      len: [1] 
-      } 
+      len: [1]
+      }
     },
     height_inches: {
       type: DataTypes.INTEGER,
       allowNull: false,
       validate: {
-      len: [1] 
-      } 
+      len: [1]
+      }
     }
-    
+
   });
 
   App_users.associate = function(models) {
@@ -84,11 +100,3 @@ module.exports = function(sequelize, DataTypes) {
 
   return App_users;
 };
-
-
-
-
-
-
-
-

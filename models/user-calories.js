@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var User_calories = sequelize.define("user_calories", {
+  var User_calories = sequelize.define("User_calories", {
 	    user_calories: {
 	      type: DataTypes.INTEGER,
 	      allowNull: false,
@@ -10,17 +10,17 @@ module.exports = function(sequelize, DataTypes) {
 	    week: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
-        primaryKey: true 
-		};
+        primaryKey: true
+		}
 	});
 
-  Post.associate = function(models) {
-    
-    user_calories.belongsTo(models.App_users, {
+  User_calories.associate = function(models) {
+
+    User_calories.belongsTo(models.App_users, {
       foreignKey: {
         allowNull: false
       }
     });
   };
-  return User_calories
+  return User_calories;
 };

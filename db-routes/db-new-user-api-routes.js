@@ -4,7 +4,7 @@ module.exports = function(app) {
 
   // GET route for getting all of the app users
   app.get("/", function(req, res) {
-    db.App_userInfo.findAll({})
+    db.App_users.findAll({})
     .then(function(dbApp_userInfo) {
       res.json(dbApp_userInfo);
     });
@@ -13,9 +13,9 @@ module.exports = function(app) {
   // POST route for saving a new user
   app.post("/api/user", function(req, res) {
     console.log(req.body);
-    db.App_userInfo.create({
+    db.App_users.create({
       first_name: req.body.first_name,
-      last_name: req.body.last_name,     
+      last_name: req.body.last_name,
       user_name: req.body.user_name,
       password: req.body.password,
       city: req.body.city,
@@ -31,7 +31,7 @@ module.exports = function(app) {
 
   // PUT route for updating user info
   app.put("/api/user", function(req, res) {
-    db.App_userInfo.update(req.body,
+    db.App_users.update(req.body,
       {
         where: {
           id: req.body.id
@@ -44,7 +44,7 @@ module.exports = function(app) {
 
 // DELETE route for deleting user info
   app.delete("/api/user/:id", function(req, res) {
-    db.App_userInfo.destroy({
+    db.App_users.destroy({
       where: {
         id: req.params.id
       }

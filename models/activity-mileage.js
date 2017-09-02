@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  var Activity_mileage = sequelize.define("activity_mileage", {
+  var Activity_mileage = sequelize.define("Activity_mileage", {
 	    activity_mileage: {
 	      type: DataTypes.INTEGER,
 	      allowNull: false,
@@ -10,18 +10,18 @@ module.exports = function(sequelize, DataTypes) {
 	    week: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
-        primaryKey: true 
+        primaryKey: true
 		}
 	});
 
-  Post.associate = function(models) {
-    
-    activity_mileage.belongsTo(models.App_users, {
+  Activity_mileage.associate = function(models) {
+
+    Activity_mileage.belongsTo(models.App_users, {
       foreignKey: {
         allowNull: false
       }
     });
   };
 
-  return Activity_mileage
+  return Activity_mileage;
 };

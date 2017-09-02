@@ -5,7 +5,7 @@ module.exports = function(app) {
 
   // GET route for getting all of the user mileages
   app.get("/", function(req, res) {
-    db.User_mileage.findAll({})
+    db.Activity_mileages.findAll({})
     .then(function(dbUser_mileage) {
       res.json(dbUser_mileage);
     });
@@ -14,9 +14,9 @@ module.exports = function(app) {
    // POST route for saving user mileages
   app.post("/api/user-mileage", function(req, res) {
     console.log(req.body);
-    db.User_mileage.create({
+    db.Activity_mileages.create({
       user_name: req.body.user_name,
-      total_mileage: req.body.total_mileage     
+      total_mileage: req.body.total_mileage
     })
     .then(function(dbUser_mileage) {
       res.json(dbUser_mileage);
@@ -25,7 +25,7 @@ module.exports = function(app) {
 
   // PUT route for updating user mileages
   app.put("/api/user-mileage", function(req, res) {
-    db.User_mileage.update(req.body,
+    db.Activity_mileages.update(req.body,
       {
         where: {
           id: req.body.id
@@ -38,7 +38,7 @@ module.exports = function(app) {
 
   // DELETE route for deleting user mileages
   app.delete("/api/user-mileage/:id", function(req, res) {
-    db.User_mileage.destroy({
+    db.Activity_mileages.destroy({
       where: {
         id: req.params.id
       }

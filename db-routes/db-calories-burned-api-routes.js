@@ -5,7 +5,7 @@ module.exports = function(app) {
 
   // GET route for getting all of the calories burned
   app.get("/", function(req, res) {
-    db.App_userInfo.findAll({})
+    db.User_calories.findAll({})
     .then(function(dbUser_caloriesBurned) {
       res.json(dbUser_caloriesBurned);
     });
@@ -14,9 +14,9 @@ module.exports = function(app) {
    // POST route for saving user new calories
   app.post("/api/user-calories", function(req, res) {
     console.log(req.body);
-    db.User_caloriesBurned.create({
+    db.User_calories.create({
       user_name: req.body.user_name,
-      calories_burned: req.body.calories_burned     
+      calories_burned: req.body.calories_burned
     })
     .then(function(dbUser_caloriesBurned) {
       res.json(dbUser_caloriesBurned);
@@ -25,7 +25,7 @@ module.exports = function(app) {
 
   // PUT route for updating user calories
   app.put("/api/user-calories", function(req, res) {
-    db.User_caloriesBurned.update(req.body,
+    db.User_calories.update(req.body,
       {
         where: {
           id: req.body.id
@@ -38,7 +38,7 @@ module.exports = function(app) {
 
   // DELETE route for deleting user calories
   app.delete("/api/user-calories/:id", function(req, res) {
-    db.User_caloriesBurned.destroy({
+    db.User_calories.destroy({
       where: {
         id: req.params.id
       }
