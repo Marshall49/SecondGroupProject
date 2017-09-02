@@ -15,13 +15,8 @@ module.exports = function(sequelize, DataTypes) {
 	});
 
   User_calories.associate = function(models) {
-<<<<<<< HEAD
 
     User_calories.belongsTo(models.App_users, {
-=======
-    
-    user_calories.belongsTo(models.App_users, {
->>>>>>> e221ed75dd20ac266f7b43f54470e19e6c7a0ce5
       foreignKey: {
         allowNull: false
       }

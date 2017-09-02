@@ -15,13 +15,8 @@ module.exports = function(sequelize, DataTypes) {
 	});
 
   Activity_mileage.associate = function(models) {
-<<<<<<< HEAD
 
     Activity_mileage.belongsTo(models.App_users, {
-=======
-    
-    activity_mileage.belongsTo(models.App_users, {
->>>>>>> e221ed75dd20ac266f7b43f54470e19e6c7a0ce5
       foreignKey: {
         allowNull: false
       }
