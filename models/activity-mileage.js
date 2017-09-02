@@ -14,7 +14,7 @@ module.exports = function(sequelize, DataTypes) {
 		}
 	});
 
-  Post.associate = function(models) {
+  Activity_mileage.associate = function(models) {
     
     activity_mileage.belongsTo(models.App_users, {
       foreignKey: {

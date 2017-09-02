@@ -14,7 +14,7 @@ module.exports = function(sequelize, DataTypes) {
 		};
 	});
 
-  Post.associate = function(models) {
+  User_calories.associate = function(models) {
     
     user_calories.belongsTo(models.App_users, {
       foreignKey: {

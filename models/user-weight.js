@@ -14,7 +14,7 @@ module.exports = function(sequelize, DataTypes) {
 		};
 	});
 
-  Post.associate = function(models) {
+  User_weight.associate = function(models) {
     
     user_weight.belongsTo(models.App_users, {
       foreignKey: {
