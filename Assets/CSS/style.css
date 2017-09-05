@@ -89,7 +89,7 @@ b {
   position: relative;
   cursor: pointer;
   top: 10vh;
-  left: 6.8%;
+  left: 4.5%;
   color: white;
   transform: translate3d(-50%, -50%, 0);
   padding: 0.7em calc(0.7em * 1.2);
