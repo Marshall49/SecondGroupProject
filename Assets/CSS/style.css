@@ -43,7 +43,7 @@ opacity: 2.5;
 }
 
 .pull-right  li:hover {
-  border-bottom: #EF4035 4px solid;
+  border-bottom: #70b5fa 4px solid;
 }
 
 .navbar-header {
@@ -74,7 +74,7 @@ opacity: 2.5;
 
 
 hr.colored {
-  border: solid 2.5px #EF4035;
+  border: solid 2.5px #70b5fa;
 }
 
 hr {
@@ -82,14 +82,14 @@ hr {
 }
 
 b {
-  color: #EF4035;
+  color: #FA8072;
 }
 
 .button {
   position: relative;
   cursor: pointer;
   top: 10vh;
-  left: 4.5%;
+  left: 6.9%;
   color: white;
   transform: translate3d(-50%, -50%, 0);
   padding: 0.7em calc(0.7em * 1.2);
