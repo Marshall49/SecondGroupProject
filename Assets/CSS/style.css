@@ -1,19 +1,14 @@
-body{
+body  {
   background-image: url("../Images/running2.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-.navbar{
-/*background: #f2f2f2;*/
-border: none;
-font-family: 'Varela Round', sans-serif;
-opacity: 2.5;
+  position: relative;
 }
 
 .name {
   font-size: 30px;
   color: white;
-  margin-left: -1%;
+  margin-left: 1.4%;
   font-family: 'Varela Round', sans-serif;
   position: relative;
   width: 10%;
@@ -46,14 +41,24 @@ opacity: 2.5;
   border-bottom: #70b5fa 4px solid;
 }
 
-.navbar-header {
+.nav-head {
   float: left;
   padding-left: -5px;
   font-size: 20px;
-  margin-top: -20px;
+  margin-top: -4px;
 }
 
-.navbar-brand {
+.login {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+}
+
+.signup {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+}
+
+.brand {
   font-size: 25px;
 }
 
@@ -65,7 +70,7 @@ opacity: 2.5;
   z-index: 1;
   text-align: center;
   font-family: 'Varela Round', sans-serif;
-  padding-top: 170px;
+  padding-top: 100px;
   color: white;
   line-height: 1em;
   text-transform: uppercase;
@@ -85,11 +90,12 @@ b {
   color: #FA8072;
 }
 
+
 .button {
   position: relative;
   cursor: pointer;
   top: 10vh;
-  left: 6.9%;
+  left: 10.9%;
   color: white;
   transform: translate3d(-50%, -50%, 0);
   padding: 0.7em calc(0.7em * 1.2);
@@ -98,7 +104,7 @@ b {
   position: relative;
   font-size: 30px;
   letter-spacing: 0.07em;
-  /*text-decoration: none;*/
+  text-decoration: none;
 }
 .button .text {
   font-family: 'Varela Round', sans-serif;
@@ -106,7 +112,7 @@ b {
   transform: translate3d(0, 0.7em, 0);
   display: block;
   transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1) 0.4s;
-  /*text-decoration: none;*/
+  text-decoration: none;
   color: white;
   text-align: center;
 }
@@ -121,9 +127,10 @@ b {
   z-index: -1;
   transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
   transform-origin: left;
-  /*text-decoration: none;*/
+  text-decoration: none;
   color: white;
 }
+
 
 .line {
   position: absolute;
@@ -167,14 +174,14 @@ b {
 .button:active .text {
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
-  /*text-decoration: none;*/
+  text-decoration: none;
   color: white;
 }
 
 .button:hover:after,
 .button:active:after {
   transform: scale3d(0, 1, 1);
-  /*text-decoration: none;*/
+  text-decoration: none;
   right: -3px;
   left: -3px;
   transform-origin: right;
@@ -184,27 +191,34 @@ b {
 .button:hover .line,
 .button:active .line {
   transform: scale3d(1, 1, 1);
+  text-decoration: none;
 }
 .button:hover .line.-right,
 .button:active .line.-right {
   transition: transform 0.1s cubic-bezier(1, 0, 0.65, 1.01) 0.2s;
   transform-origin: bottom;
+  text-decoration: none;
 }
 .button:hover .line.-top,
 .button:active .line.-top {
   transition: transform 0.08s linear 0.4s;
   transform-origin: right;
+  text-decoration: none;
 }
 .button:hover .line.-left,
 .button:active .line.-left {
   transition: transform 0.08s linear 0.48s;
   transform-origin: top;
+  text-decoration: none;
 }
 .button:hover .line.-bottom,
 .button:active .line.-bottom {
   transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
   transform-origin: left;
+  text-decoration: none;
 }
+
+
 
 
 /*.navbar {
@@ -446,7 +460,7 @@ a:hover {
 /*//Login Modal*/
 
 input[type=text], input[type=password] {
-    width: 50%;
+    width: 38%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -460,24 +474,27 @@ input[type=text], input[type=password] {
 }
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
+    background-color: #70b5fa;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
+    border-radius: 20px;
 
 }
 
 label {
   display: block;
+  font-size: 17px;
   color: black;
   font-family: 'Varela Round', sans-serif;
 }
 
 #login {
   font-family: 'Varela Round', sans-serif;
-  width: 53.8%;
+  width: 40.8%;
+  font-weight: bold;
 }
 
 
@@ -497,10 +514,11 @@ button:hover {
 /* Extra styles for the cancel button */
 .cancelbtn {
     width: auto;
-    padding: 10px 18px;
+    padding: 5px 15px;
     background-color: #f44336;
     font-family: 'Varela Round', sans-serif;
 }
+
 
 /* Center the image and position the close button */
 .imgcontainer {
@@ -509,14 +527,14 @@ button:hover {
     position: relative;
 }
 
-/*img.avatar {
-    width: 40%;
+img.avatar {
+    width: 15%;
     border-radius: 50%;
-}*/
-
-.container {
-    padding: 16px;
 }
+
+/*.container {
+    padding: 16px;
+}*/
 
 span.psw {
     float: right;
@@ -543,9 +561,10 @@ span.psw {
 /* Modal Content/Box */
 .modal-content {
     background-color: #E6E6E6;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    margin: 1% auto 8% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
+    width: 40%; /* Could be more or less, depending on screen size */
+    border-radius: 17.3px;
 }
 
 /* The Close Button (x) */
@@ -621,7 +640,7 @@ input[type=text2], input[type=password2] {
 }
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
+    background-color: #70b5fa;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -707,6 +726,8 @@ span.psw2 {
     border: 1px solid #888;
     width: 50%;
     opacity: -4px;
+
+
 }
 
 /* The Close Button (x) */

@@ -15,12 +15,12 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
-  <body class="navbar-wrapper">
-    <div class="container-fluid">
-        <nav class="navbar navbar-fixed-top">
+  <body>
+    <!-- <div class="container-fluid"> -->
+        <!-- <div class="navbar navbar-fixed-top"> -->
             <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
+                <div class="nav-head">
+                    <a class="brand" href="#">
                       <img src="Assets/Images/runningman3.png">
                     </a>
                 </div>
@@ -30,15 +30,15 @@
                 <div id="navbar" class="navbar-collapse collapse">
 
                     <ul class="nav navbar-nav pull-right" style="margin-top: -37px;">
-                        <li class=""><a href="#">Log In</a>
+                        <li class="login"><a onclick="document.getElementById('id01').style.display='block'" href="#">Log In</a>
                         </li>
-                        <li class=""><a href="#">Sign Up</a></li>
+                        <li class="signup"><a onclick="document.getElementById('id02').style.display='block'" href="#">Sign Up</a></li>
                     </ul>
                 </div>
             </div>
-        </nav>
-    </div>
-</div>
+
+
+
 
               <div class="Header">
                   <center>
@@ -47,7 +47,7 @@
                 <div class="button">
                         <center>
                       <a>
-                        <span class="text">About</span>
+                        <span class="text">Learn More</span>
                         <span class="line -right"></span>
                         <span class="line -top"></span>
                         <span class="line -left"></span>
@@ -55,6 +55,7 @@
                     </a>
                   </div>
               </div>
+
 
 
 
@@ -95,12 +96,13 @@
         </div> -->
         <!-- //End of Title -->
 
-        <!-- //Login Modal Box -->
-<!--
+
+
         <div id="id01" class="modal">
 
               <form class="modal-content animate" action="/action_page.php">
                     <div class="imgcontainer">
+                        <img src="Assets/Images/runningman3 login.png" alt="Avatar" class="avatar">
                           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                     </div>
 
@@ -112,7 +114,7 @@
                   <input type="password" placeholder="Enter Password" name="psw" required>
 
                     <div id="login">
-              <button type="submit"><a href="file:///Users/MalcolmStrong/SecondGroupProject/Metrics.html">Login</a></button>
+              <button type="submit"><a onclick="document.getElementById('id01').style.display='none'">Login</a></button>
                   </div>
 
                     <div id="check">
@@ -125,12 +127,12 @@
                           <span class="psw">Forgot <a href="#">password?</a></span>
                     </div>
                 </form>
-            </div> -->
-            <!-- //End of Login Modal -->
+            </div>
+
 
             <!-- //SignUp Modal Box -->
 
-            <!-- <div id="id02" class="modal2">
+            <div id="id02" class="modal2">
 
                   <form class="modal-content2 animate" action="/action_page.php">
                         <div class="imgcontainer2">
@@ -153,24 +155,24 @@
                           <label>Password</label>
                       <input type="password2" placeholder="Create Password" name="psw2" required>
 
-                          <label>City</label>
-                      <input type="text2" placeholder="City" name="uname2" required>
+                          <!-- <label>City</label>
+                      <input type="text2" placeholder="City" name="uname2" required> -->
 
-                          <label>State</label>
-                      <input type="text2" placeholder="State Ex. AZ" name="uname2" required>
+                          <!-- <label>State</label>
+                      <input type="text2" placeholder="State Ex. AZ" name="uname2" required> -->
 
-                          <label>Zip Code</label>
-                      <input type="text2" placeholder="Zip Code" name="uname2" required>
+                          <!-- <label>Zip Code</label>
+                      <input type="text2" placeholder="Zip Code" name="uname2" required> -->
 
-                          <label>Height</label>
-                      <input type="text2" placeholder="Height Ex. 5ft 2in" name="uname2" required>
+                          <!-- <label>Height</label>
+                      <input type="text2" placeholder="Height Ex. 5ft 2in" name="uname2" required> -->
 
                           <label>Weight</label>
                       <input type="text2" placeholder="Weight" name="uname2" required>
 
 
                         <div id="signup2">
-                  <button type="submit" class="signupbut">GO</button>
+                  <button type="submit" class="signupbut">Register</button>
                       </div>
 
 
@@ -179,7 +181,9 @@
                         </div>
                     </form>
                 </div>
-            </div> -->
+            </div>
+
+
 
 
               <!-- //End of Signup Modal -->
