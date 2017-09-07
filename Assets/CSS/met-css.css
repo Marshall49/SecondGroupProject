@@ -6,8 +6,8 @@
 }
 
 .navbar {
-  background-color: #191919;
-  color: white;
+  background-color: #f2f2f2;
+  color: black;
   border-radius: 0px;
   height: 50%;
   padding-top: 10px;
@@ -41,12 +41,12 @@
   font-family: 'Varela Round', sans-serif;
   font-size: 25px;
   font-weight: bold;
-  color: white;
+  color: black;
   margin-left: 10px;
 }
 
 b {
-  color: #a9fd00;
+  color: #70b5fa;
 }
 
 ul li {
@@ -66,29 +66,29 @@ ul li {
 .links {
     font-weight: bold;
     padding-top: 25px;
-    color: white;
+    color: black;
 }
 
 .links:visited {
   padding-top: 25px;
-  color: white;
+  color: black;
 }
 
 .links:hover {
     padding-top: 25px;
-    color: white;
+    color: black;
 }
 
 .links:active {
   padding-top: 25px;
-  color: white;
+  color: black;
 }
 
 .green-border {
   border-width: 20px;
   border-radius: 20px;
-  background-color: #98E400;
-  border: 10px solid #98E400;
+  background-color: #FA8072;
+  border: 10px solid #FA8072;
   position: relative;
   bottom: 10px;
 }
@@ -153,7 +153,7 @@ button:hover {
   border: none;
   margin-left: 0.5px;
   width: 93%;
-  background-color:#f1f1f1;
+  background-color:#f2f2f2;
 }
 
 /* Extra styles for the cancel button */
@@ -254,11 +254,11 @@ span.psw2 {
   padding-top: 50px;
   font-size: 30px;
   color: white;
-  background-color: #191919;
+  background-color: #f2f2f2;
   width: 100%;
   text-align: center;
   margin-top: 500px;
-  padding-bottom: 30px;
+  padding-bottom: 100px;
 }
 
 #follow-text {
@@ -267,9 +267,21 @@ span.psw2 {
   font-family: 'Varela Round', sans-serif;
   font-size: 30px;
   float: left;
-  padding-left: 100px;
+  padding-left: 500px;
   position: relative;
   bottom: 20px;
+  color: black;
+}
+
+hr.colored {
+  border: solid 1.5px #70b5fa;
+}
+
+hr {
+  max-width: 55px;
+  text-align: center;
+  margin-top: -70px;
+
 }
 
 #follow-copyright {
@@ -349,10 +361,10 @@ span.psw2 {
           transform: scale(1);
 }
 .social-btns {
-  height: 55px;
+  height: 1px;
   margin: auto;
   font-size: 0;
-  padding-left: 20px;
+  padding-left: 547px;
   position: absolute;
   top: 10;
   bottom: 0;
@@ -384,4 +396,32 @@ span.psw2 {
 .social-btns .btn .fa {
   font-size: 38px;
   vertical-align: middle;
+}
+
+.container {
+  position: relative;
+  height: 50%;
+  width: 100%;
+}
+
+.title h2 {
+  padding-top: 10px;
+  color: black;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.title img {
+padding-left: 500px;
+}
+
+.headers h2 {
+  padding-top: 60px;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
 }
