@@ -1,14 +1,34 @@
-body  {
-  background-image: url("../Images/running2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+body,
+html {
+  width: 100%;
+  height: 100%;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.mast-head {
+    position: relative;
+    width: 100%;
+    min-height: 800px;
+    text-align: center;
+    color: #fff;
+    background-image: url("../Images/running2.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .name {
   font-size: 30px;
   color: white;
-  margin-left: 1.4%;
+  margin-right: 70%;
   font-family: 'Varela Round', sans-serif;
   position: relative;
   width: 15%;
@@ -17,7 +37,7 @@ body  {
 }
 
 .pull-right {
-  margin-left: 750px;
+  margin-right: 50px;
   font-size: 20px;
 }
 
@@ -32,20 +52,20 @@ body  {
   color: white;
   background: rgba(154, 154, 154, 0.27);
 }
-.navbar a, li>a, li>a:focus, li>a:hover, .navbar-toggle{
+.navbar a, li>a, li>a:focus, li>a:hover, {
  color: white;
  font-weight: bold;
 }
 
 .pull-right  li:hover {
-  border-bottom: #70b5fa 4px solid;
+  border-bottom: #F05F40  4px solid;
 }
 
 .nav-head {
   float: left;
-  padding-left: -5px;
+  padding-left:  60px;
   font-size: 20px;
-  margin-top: -4px;
+  margin-top: 1px;
 }
 
 .login {
@@ -79,7 +99,7 @@ body  {
 
 
 hr.colored {
-  border: solid 2.5px #70b5fa;
+  border: solid 2.5px #fff;
 }
 
 hr {
@@ -87,7 +107,7 @@ hr {
 }
 
 b {
-  color: #FA8072;
+  color: #F05F40 ;
 }
 
 
@@ -216,6 +236,63 @@ b {
   transition: transform 0.5s cubic-bezier(0, 0.53, 0.29, 1) 0.56s;
   transform-origin: left;
   text-decoration: none;
+}
+
+.about-us {
+  margin-left: 25%;
+  margin-top: -50px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+}
+
+.bg-primary {
+  background-color: #F05F40 !important;
+}
+
+.bg-dark {
+  color: white;
+  background-color: #222222 !important;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+section {
+  padding: 100px 0;
+}
+
+hr.light {
+    border-color: white;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+}
+
+.btn {
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 300px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.btn-default {
+  color: #222;
+  border-color: #fff;
+  background-color: #fff;
+}
+
+h2.text-white {
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 
@@ -475,7 +552,7 @@ input[type=text], input[type=password] {
 /* Set a style for all buttons */
 button {
     background-color: #70b5fa;
-    color: white;
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -483,6 +560,7 @@ button {
     border-radius: 20px;
 
 }
+
 
 label {
   display: block;
@@ -641,7 +719,7 @@ input[type=text2], input[type=password2] {
 /* Set a style for all buttons */
 button {
     background-color: #70b5fa;
-    color: white;
+    color: black;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;

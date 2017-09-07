@@ -1,16 +1,19 @@
 
 .container-fluid {
-  background-color: white;
+  background-color: #f2f2f2;
   position: relative;
   padding: 0px;
 }
 
 .navbar {
-  background-color: #f2f2f2;
-  color: black;
+  background-color: white;
+  color: white;
   border-radius: 0px;
-  height: 50%;
+  height: 10%;
   padding-top: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .navbar-brand {
@@ -46,7 +49,7 @@
 }
 
 b {
-  color: #70b5fa;
+  color: #F05F40;
 }
 
 ul li {
@@ -84,11 +87,11 @@ ul li {
   color: black;
 }
 
-.green-border {
+.orange-border {
   border-width: 20px;
   border-radius: 20px;
-  background-color: #FA8072;
-  border: 10px solid #FA8072;
+  background-color: #F05F40;
+  border: 10px solid #F05F40;
   position: relative;
   bottom: 10px;
 }
@@ -254,7 +257,7 @@ span.psw2 {
   padding-top: 50px;
   font-size: 30px;
   color: white;
-  background-color: #f2f2f2;
+  background-color: white;
   width: 100%;
   text-align: center;
   margin-top: 500px;
@@ -274,7 +277,7 @@ span.psw2 {
 }
 
 hr.colored {
-  border: solid 1.5px #70b5fa;
+  border: solid 1.5px #F05F40;
 }
 
 hr {
@@ -405,11 +408,11 @@ hr {
 }
 
 .title h2 {
-  padding-top: 10px;
+  padding-top: 90px;
   color: black;
   text-align: center;
   font-family: 'Varela Round', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   text-decoration: underline;
 }
