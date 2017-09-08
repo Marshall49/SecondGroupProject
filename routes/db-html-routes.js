@@ -8,17 +8,17 @@ module.exports = function(app) {
 
   // index route loads view.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../index.html"));
+    res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
   // index route loads index.html
-  app.get("/index", function(req, res) {
-    res.sendFile(path.join(__dirname, "../index.html"));
+  app.get("/metrics", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/Metrics.html"));
   });
 
   // metrics route loads metrics.html
-  app.get("/metrics", function(req, res) {
-    res.sendFile(path.join(__dirname, "../metrics.html"));
-  });
+  // app.get("/metrics", function(req, res) {
+  //   res.sendFile(path.join(__dirname, "../metrics.html"));
+  // });
 
 };

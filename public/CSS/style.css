@@ -255,6 +255,10 @@ p {
   background-color: #F05F40 !important;
 }
 
+.hidden {
+  display: hidden;
+}
+
 .bg-dark {
   color: white;
   background-color: #222222 !important;
@@ -293,6 +297,84 @@ hr.light {
 h2.text-white {
   font-size: 2rem;
   font-weight: 500;
+}
+
+
+.about-us {
+  margin-left: 25%;
+  margin-top: -50px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+}
+
+.team {
+  background-color: #fff !important;
+}
+
+.bg-dark {
+  color: white;
+  background-color: #222222 !important;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+section {
+  padding: 100px 0;
+}
+
+hr.light {
+    border-color: white;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+}
+
+.btn {
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 300px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.btn-default {
+  color: #222;
+  border-color: #fff;
+  background-color: #fff;
+}
+
+h2.text-white {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+hr.orange {
+    border-color: #F05F40;
+    max-width: 200px;
+}
+
+h2 {
+  padding-top: 10px;
+  padding-left: 12px;
+}
+
+.bio-head {
+  padding-left: 25%;
+}
+
+.contact {
+  padding-top: 2%;
+  padding-left: 15%;
+
 }
 
 

@@ -21,11 +21,11 @@ app.use(express.static("public"));
 var db = require("./models");
 
 
-require('./db-routes/db-calories-burned-api-routes.js')(app);
-require('./db-routes/db-new-user-api-routes.js')(app);
-require('./db-routes/db-user-mileage-api-routes.js')(app);
-require('./db-routes/db-user-weight-api-routes.js')(app);
-
+require('./routes/db-calories-burned-api-routes.js')(app);
+require('./routes/db-new-user-api-routes.js')(app);
+require('./routes/db-user-mileage-api-routes.js')(app);
+require('./routes/db-user-weight-api-routes.js')(app);
+require('./routes/db-html-routes.js')(app);
 
 
 // app.use("/", routes);
