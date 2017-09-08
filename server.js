@@ -15,10 +15,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
-// Static directory
-app.use(express.static("public"));
+
 
 var db = require("./models");
+
+// Static directory
+app.use(express.static("public"));
 
 
 require('./routes/db-calories-burned-api-routes.js')(app);
@@ -28,7 +30,6 @@ require('./routes/db-user-weight-api-routes.js')(app);
 require('./routes/db-html-routes.js')(app);
 
 
-// app.use("/", routes);
 // app.use("/update", routes);
 // app.use("/create", routes);
 // app.use("/delete", routes);
