@@ -254,9 +254,9 @@ p {
   background-color: #F05F40 !important;
 }
 
-.hidden {
+/*.hidden {
   display: hidden;
-}
+}*/
 
 .bg-dark {
   color: white;
