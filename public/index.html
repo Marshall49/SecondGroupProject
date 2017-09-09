@@ -117,7 +117,7 @@
 
         <div id="id01" class="modal">
 
-              <form class="modal-content animate" action="/action_page.php">
+              <form class="modal-content animate" action="/action_page.php" method="get">
                     <div class="imgcontainer">
                         <img src="Images/runningman3 login.png" alt="Avatar" class="avatar">
                           <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -150,7 +150,7 @@
 
             <div id="id02" class="modal2">
 
-                  <form class="modal-content2 animate" action="/action_page.php">
+                  <form class="modal-content2 animate" action="" method="POST" role="form">
                         <div class="imgcontainer2">
                               <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">&times;</span>
                        </div>
@@ -160,35 +160,35 @@
                         <h2>Sign<b>U</b>p</h2>
                       </div>
                           <label>First Name</label>
-                      <input type="text2" placeholder="First Name" name="uname2" required>
+                      <input type="text2" id="firstName" placeholder="First Name" name="uname2" required>
 
                           <label>Last Name</label>
-                      <input type="text2" placeholder="Last Name" name="uname2" required>
+                      <input type="text2"  id="lastName" placeholder="Last Name" name="uname2" required>
 
                           <label>Create Username</label>
-                      <input type="text2" placeholder="Create Username" name="uname2" required>
+                      <input type="text2" id="userName" placeholder="Create Username" name="uname2" required>
 
                           <label>Create Password</label>
-                      <input type="password2" placeholder="Create Password" name="psw2" required>
+                      <input type="password2" id="passWord" placeholder="Create Password" name="psw2" required>
 
                           <label>City</label>
-                      <input type="text2" placeholder="City" name="uname2" required>
+                      <input type="text2" id="userCity" placeholder="City" name="uname2" required>
 
                           <label>State</label>
-                      <input type="text2" placeholder="State Ex. AZ" name="uname2" required>
+                      <input type="text2" id="userState" placeholder="State Ex. AZ" name="uname2" required>
 
                           <label>Zip Code</label>
-                      <input type="text2" placeholder="Zip Code" name="uname2" required>
+                      <input type="text2" id="userZip" placeholder="Zip Code" name="uname2" required>
 
                            <label>Height</label>
-                      <input type="text2" placeholder="Height Ex. 5ft 2in" name="uname2" required>
+                      <input type="text2" id="userHeight" placeholder="Height Ex. 5ft 2in" name="uname2" required>
 
                           <label>Weight</label>
-                      <input type="text2" placeholder="Weight" name="uname2" required>
+                      <input type="text2" id="userWeight" placeholder="Weight" name="uname2" required>
 
 
                         <div id="signup2">
-                  <button type="submit" class="signupbut">Register</button>
+                  <button type="submit" id="register-button" class="signupbut">Register</button>
                       </div>
 
 
@@ -204,7 +204,7 @@
 
               <!-- //End of Signup Modal -->
 
-    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="Javascript/click.js"></script>
     <script src="Javascript/app.js"></script>
     <script src="Javascript/login.js"></script>
