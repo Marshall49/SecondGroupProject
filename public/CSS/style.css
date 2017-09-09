@@ -120,7 +120,6 @@ b {
   padding: 0.7em calc(0.7em * 1.2);
   display: inline-block;
   border: 3px solid transparent;
-  position: relative;
   font-size: 20px;
   letter-spacing: 0.07em;
   text-decoration: none;
@@ -146,8 +145,11 @@ b {
   z-index: -1;
   transition: transform 0.8s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.6s, left 0.4s cubic-bezier(0.04, 0.48, 0, 1) 0.6s;
   transform-origin: left;
-  text-decoration: none;
   color: white;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 
@@ -193,7 +195,6 @@ b {
 .button:active .text {
   transform: translate3d(0, 0, 0);
   transition: transform 0.6s cubic-bezier(0.2, 0, 0, 1) 0.4s;
-  text-decoration: none;
   color: white;
 }
 
