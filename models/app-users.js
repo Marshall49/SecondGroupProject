@@ -52,16 +52,16 @@ module.exports = function(sequelize, DataTypes) {
       len: [1]
       }
     },
-    height_feet: {
-      type: DataTypes.INTEGER,
+    height: {
+      type: DataTypes.STRING,
       allowNull: false,
       validate: {
       len: [1]
       }
     },
-    height_inches: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
+    weight: {
+      type: DataTypes.STRING,
+      // allowNull: false,
       validate: {
       len: [1]
       }
