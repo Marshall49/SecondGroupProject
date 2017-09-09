@@ -122,7 +122,7 @@ input[type=text2], input[type=password2] {
 }
 /* Set a style for all buttons */
 button {
-    background-color: #4CAF50;
+    background-color: #70b5fa;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -261,18 +261,16 @@ span.psw2 {
   width: 100%;
   text-align: center;
   margin-top: 500px;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 
 #follow-text {
-  bottom: 30%;
   font-weight: bold;
   font-family: 'Varela Round', sans-serif;
-  font-size: 30px;
-  float: left;
-  padding-left: 500px;
+  font-size: 10px;
   position: relative;
-  bottom: 20px;
+  bottom: 15px;
+  text-align: center;
   color: black;
 }
 
