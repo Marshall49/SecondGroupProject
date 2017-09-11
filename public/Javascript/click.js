@@ -16,3 +16,7 @@ $(".js-scroll-trigger").click(function(){
         // $("#div2").fadeIn("slow");
         $(".social-btns").fadeIn(7000);
 });
+
+$('#log-button').click(function(){
+   window.location.href='https://protected-wildwood-89400.herokuapp.com/metrics';
+})

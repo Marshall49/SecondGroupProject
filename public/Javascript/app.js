@@ -1,4 +1,5 @@
 $("#register-button").on("click", function(event) {
+  window.location.href="/metrics";
   event.preventDefault();
   // Getting references to the user input from modal
   var newUser = {
@@ -19,7 +20,12 @@ $.post("/api/user", newUser)
     // log the data we found
     console.log(data);
 
-  });
+});
+
+  
+
+
+
 });
 
 // $("#login-button").on("click", function(event) {
