@@ -5,7 +5,7 @@ var weightX = [];
 var weightY = [];
 var mileageX = [];
 var mileageY = [];
-db.user_caloriesBurned.findAll({
+db.User_calories.findAll({
  	attributes: calories_burned,
   	limit: 5,
   	where: {
@@ -14,9 +14,9 @@ db.user_caloriesBurned.findAll({
   	order: [ [ 'createdAt', 'DESC' ]]
 }).then(function(entries){
   calorieY = entries
-}); 
+});
 
-db.user_caloriesBurned.findAll({
+db.User_calories.findAll({
  	attributes: week,
   	limit: 5,
   	where: {
@@ -25,15 +25,15 @@ db.user_caloriesBurned.findAll({
   	order: [ [ 'createdAt', 'DESC' ]]
 }).then(function(entries){
   calorieX = entries
-}); 
+});
 var calorieTrace = {
 
- 	x: calorieX, 
- 	y: calorieY, 
+ 	x: calorieX,
+ 	y: calorieY,
  	type: 'scatter'
 };
 
-db.user_weight.findAll({
+db.User_weights.findAll({
  	attributes: current_weight,
   	limit: 5,
   	where: {
@@ -42,9 +42,9 @@ db.user_weight.findAll({
   	order: [ [ 'createdAt', 'DESC' ]]
 }).then(function(entries){
   weightY = entries
-}); 
+});
 
-db.user_weight.findAll({
+db.User_weights.findAll({
  	attributes: week,
   	limit: 5,
   	where: {
@@ -53,15 +53,15 @@ db.user_weight.findAll({
   	order: [ [ 'createdAt', 'DESC' ]]
 }).then(function(entries){
   weightX = entries
-}); 
+});
 
 var weightTrace = {
- 	x: weightX, 
- 	y: weightY, 
+ 	x: weightX,
+ 	y: weightY,
  	type: 'scatter'
 };
 
-db.user_mileage.findAll({
+db.Activity_mileages.findAll({
  	attributes: total_mileage,
   	limit: 5,
   	where: {
@@ -70,9 +70,9 @@ db.user_mileage.findAll({
   	order: [ [ 'createdAt', 'DESC' ]]
 }).then(function(entries){
   activityY = entries
-}); 
+});
 
-db.user_mileage.findAll({
+db.Activity_mileages.findAll({
  	attributes: week,
   	limit: 5,
   	where: {
@@ -83,8 +83,8 @@ db.user_mileage.findAll({
   activityX = entries
 });
 var mileageTrace = {
- 	x: mileageX, 
- 	y: mileageY, 
+ 	x: mileageX,
+ 	y: mileageY,
  	type: 'scatter'
 };
 
@@ -98,7 +98,7 @@ var calorieLayout = {
     title: 'Week',
     titlefont: {
       family: 'Courier New, monospace',
-      size: 18,
+      size: 13,
       color: '#7f7f7f'
     }
   },
@@ -106,7 +106,7 @@ var calorieLayout = {
     title: 'Calories',
     titlefont: {
       family: 'Courier New, monospace',
-      size: 18,
+      size: 13,
       color: '#7f7f7f'
     }
   }
@@ -118,7 +118,7 @@ var weightLayout = {
     title: 'Week',
     titlefont: {
       family: 'Courier New, monospace',
-      size: 18,
+      size: 13,
       color: '#7f7f7f'
     }
   },
@@ -126,7 +126,7 @@ var weightLayout = {
     title: 'Weight',
     titlefont: {
       family: 'Courier New, monospace',
-      size: 18,
+      size: 13,
       color: '#7f7f7f'
     }
   }
@@ -138,7 +138,7 @@ var mileageLayout = {
     title: 'Week',
     titlefont: {
       family: 'Courier New, monospace',
-      size: 18,
+      size: 13,
       color: '#7f7f7f'
     }
   },
@@ -146,7 +146,7 @@ var mileageLayout = {
     title: 'Mileage',
     titlefont: {
       family: 'Courier New, monospace',
-      size: 18,
+      size: 13,
       color: '#7f7f7f'
     }
   }

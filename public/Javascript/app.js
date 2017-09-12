@@ -19,10 +19,7 @@ $.post("/api/user", newUser)
   .done(function(data) {
     // log the data we found
     console.log(data);
-
 });
-
-  
 
 
 
