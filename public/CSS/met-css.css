@@ -409,10 +409,10 @@ hr {
   padding-top: 90px;
   color: black;
   text-align: center;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Varela', sans-serif;
   font-size: 30px;
   font-weight: bold;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 
 .title img {
@@ -429,4 +429,6 @@ padding-left: 500px;
 
 .author-container {
   margin-top: 50px;
+  font-family: 'Varela', sans-serif;
+  font-size: 17px;
 }
