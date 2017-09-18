@@ -256,10 +256,6 @@ p {
   background-color: #F05F40 !important;
 }
 
-/*.hidden {
-  display: hidden;
-}*/
-
 .bg-dark {
   color: white;
   background-color: #222222 !important;
@@ -299,10 +295,6 @@ h2.text-white {
   font-size: 2rem;
   font-weight: 500;
 }
-
-
-
-
 
 .about-us {
   margin-left: 25%;
@@ -517,9 +509,7 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 20px;
-
 }
-
 
 label {
   display: block;
@@ -533,8 +523,6 @@ label {
   width: 40.8%;
   font-weight: bold;
 }
-
-
 
 button:hover {
     opacity: 0.8;
@@ -562,10 +550,6 @@ img.avatar {
     width: 15%;
     border-radius: 50%;
 }
-
-/*.container {
-    padding: 16px;
-}*/
 
 span.psw {
     float: right;
