@@ -41,6 +41,6 @@ require('./routes/db-html-routes.js')(app);
 
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
-    console.log("sequelizedburger listening on PORT " + PORT);
+    console.log("Just Run it listening on PORT " + PORT);
   });
 });

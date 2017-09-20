@@ -22,7 +22,7 @@ module.exports = function(app) {
       state: req.body.state,
       zip_code: req.body.zip_code,
       height: req.body.height,
-      current_weight: req.body.current_weight
+      weight: req.body.weight
     })
     .then(function(dbApp_userInfo) {
       res.json(dbApp_userInfo);

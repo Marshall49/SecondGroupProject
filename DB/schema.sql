@@ -4,7 +4,7 @@ DROP DATABASE IF EXISTS fitbot_db;
 CREATE DATABASE fitbot_db;
 -- creating table called app_users using the fitbot_db database
 USE fitbot_db;
-CREATE TABLE app_userInfo(
+CREATE TABLE App_users(
 	id INTEGER(11) AUTO_INCREMENT NOT NULL,
 	first_name VARCHAR(50) NOT NULL,
 	last_name VARCHAR(50) NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE app_userInfo(
 );
 
 USE fitbot_db;
-CREATE TABLE user_weight(
+CREATE TABLE User_weights(
 	week INTEGER(11) AUTO_INCREMENT NOT NULL,
 	user_name VARCHAR(50) NOT NULL,
 	current_weight INTEGER(3) NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE user_weight(
 );
 
 USE fitbot_db;
-CREATE TABLE user_caloriesBurned(
+CREATE TABLE User_calories(
 	week INTEGER(11) AUTO_INCREMENT NOT NULL,
 	user_name VARCHAR(50) NOT NULL,
 	calories_burned INTEGER(3) NOT NULL,
@@ -36,10 +36,9 @@ CREATE TABLE user_caloriesBurned(
 );
 
 USE fitbot_db;
-CREATE TABLE user_mileage(
+CREATE TABLE Activity_mileages(
 	week INTEGER(11) AUTO_INCREMENT NOT NULL,
 	user_name VARCHAR(50) NOT NULL,
 	total_mileage INTEGER(3) NOT NULL,
 	PRIMARY KEY (week)
 );
-
