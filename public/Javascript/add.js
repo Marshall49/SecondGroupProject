@@ -1,3 +1,4 @@
+//Adding a New User to the Database
 $("#register-button").on("click", function(event) {
   window.location.href="/metrics";
   event.preventDefault();
@@ -19,44 +20,9 @@ $.post("/api/user", newUser)
   .done(function(data) {
     // log the data we found
     console.log(data);
+    console.log("Added New User!");
   });
 });
-
-$("#log-button").on("click", function(event) {
-  window.location.href="/metrics";
-  event.preventDefault();
-
-  var User;
-
-  $.get("/api/user", User)
-    // on success, run this callback
-    .done(function(data) {
-      // log the data we found
-      console.log(data);
-  });
-});
-
-// $("#login-button").on("click", function(event) {
-//   event.preventDefault();
-//   // Getting references to the user input from modal
-//   var registered = {
-//   user_name: $("#log-user").val().trim(),
-//   password: $("#log-pass").val().trim()
-// };
-//
-//
-// $.post("/api/user", registered)
-//   // on success, run this callback
-//   .done(function(data) {
-//     // log the data we found
-//     console.log(data);
-//
-//   });
-// });
-
-
-
-
 
 
 
@@ -78,20 +44,3 @@ $(".js-scroll-trigger").click(function(){
         // $("#div2").fadeIn("slow");
         $(".social-btns").fadeIn(7000);
 });
-
-
-  // Adding event listeners to the form to create a new object, and the button to cancel
-  // a user submission
-  // $(document).on("submit", ".signupbut", handlemodalContentSubmit);
-  // // $(document).on("click", ".cancelbtn2", handleCancelButtonPress);
-
-
-
-  // function handlemodalContentSubmit(event) {
-  //   event.preventDefault();
-  //   // Don't do anything if the name fields hasn't been filled out
-  //   if (!nameInput.val().trim().trim()) {
-  //     return;
-  //   }
-
-    // send an AJAX POST-request with jQuery
