@@ -2,7 +2,7 @@
 $("#register-button").on("click", function(event) {
   event.preventDefault();
 
-$.get("/api", function(data) {
+$.get("/api/user/:id", function(data) {
 
   // for each user that our server sends us back
   for (var i = 0; i < data.length; i++) {
@@ -15,16 +15,21 @@ $.get("/api", function(data) {
     // append the well to the well section
     $("#author-container").append(wellSection);
 
-    // Now add all of our character data to the well we just placed on the page
+    // Now add all of our user data to the well we just placed on the page
 
-    // make the name an h2,
-    $("#User-well-" + i).append("<h2>" + data[i].first_name + "</h2>");
-    // the role an h3,
-    $("#User-well-" + i).append("<h3>Name: " + data[i].last_name + "</h4>");
-    // the age an h3,
-    // $("#User-well-" + i).append("<h3>Age: " + data[i].age + "</h4>");
-    // // and the forcepoints an h3.
-    // $("#User-well-" + i).append("<h3>Force Points: " + data[i].forcePoints + "</h4>");
+    // make the first name an h2,
+    $("#User-well-" + i).append("<h2>First Name: " + data[i].first_name + "</h2>");
+    // the last name an h2,
+    $("#User-well-" + i).append("<h2>Last Name: " + data[i].last_name + "</h2>");
+    //The City
+    $("#User-well-" + i).append("<h3>City: " + data[i].city + "</h3>");
+    //The State
+    $("#User-well-" + i).append("<h3>State: " + data[i].state + "</h3>");
+    //The Height
+    $("#User-well-" + i).append("<h3>Height: " + data[i].height + "</h3>");
+    //The Weight
+    $("#User-well-" + i).append("<h3>Weight: " + data[i].weight + "</h3>");
   }
 });
+
 });
