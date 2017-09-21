@@ -2,7 +2,9 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
 var methodOverride = require("method-override");
-
+var passport = require("passport");
+var localStrategy = require("passport-local");
+var passportStrategy = require("passport-strategy");
 
 
 var app = express();
