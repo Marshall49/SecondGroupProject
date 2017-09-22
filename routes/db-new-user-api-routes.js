@@ -1,4 +1,5 @@
 var db = require("../models");
+var App_Users = require("../models/app-users.js");
 
 module.exports = function(app) {
 
@@ -28,6 +29,20 @@ module.exports = function(app) {
       res.json(dbApp_userInfo);
     });
   });
+
+  app.get("/metrics", function(req, res) {
+// console.log("/n/n//n/n/n" + req.params.id)
+      db.App_users.findAll({
+        where: {
+          id: req.params.id
+        }
+      }).then(function(result) {
+        return res.json(result);
+      });
+    });
+
+
+
 
   // PUT route for updating user info
   app.put("/api/user", function(req, res) {

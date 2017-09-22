@@ -1,8 +1,8 @@
 //Displaying the Database entries on the "Metrics" Page
 $("#register-button").on("click", function(event) {
-  event.preventDefault();
+  window.location.href="/metrics";
 
-$.get("/api/user/:id", function(data) {
+$.get("/api/user", function(data) {
 
   // for each user that our server sends us back
   for (var i = 0; i < data.length; i++) {
