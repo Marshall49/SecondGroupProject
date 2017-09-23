@@ -12,7 +12,11 @@ module.exports = function(app) {
   });
 
   // index route loads index.html
-  app.get("/metrics", function(req, res) {
+  // app.get("/metrics", function(req, res) {
+  //   res.sendFile(path.join(__dirname, "../public/user-metrics.html"));
+  // });
+
+  app.get("/user-metrics", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/Metrics.html"));
   });
 

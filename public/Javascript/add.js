@@ -1,6 +1,6 @@
 //Adding a New User to the Database
 $("#register-button").on("click", function(event) {
-  window.location.href="/metrics";
+  window.location.href="/user-metrics";
   event.preventDefault();
   // Getting references to the user input from modal
   var newUser = {
@@ -20,7 +20,6 @@ $.post("/api/user", newUser)
   .done(function(data) {
     // log the data we found
     console.log(data);
-    console.log("Added New User!");
   });
 });
 

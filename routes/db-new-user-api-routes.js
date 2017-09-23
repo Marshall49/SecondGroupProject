@@ -6,8 +6,8 @@ module.exports = function(app) {
   // GET route for getting all of the app users
   app.get("/", function(req, res) {
     db.App_users.findAll({})
-    .then(function(dbApp_userInfo) {
-      res.json(dbApp_userInfo);
+    .then(function(App_users) {
+      res.json(App_users);
     });
   });
 
@@ -25,21 +25,35 @@ module.exports = function(app) {
       height: req.body.height,
       weight: req.body.weight
     })
-    .then(function(dbApp_userInfo) {
-      res.json(dbApp_userInfo);
+    .then(function(App_users) {
+      res.json(App_users);
     });
   });
 
   app.get("/metrics", function(req, res) {
 // console.log("/n/n//n/n/n" + req.params.id)
-      db.App_users.findAll({
-        where: {
-          id: req.params.id
-        }
-      }).then(function(result) {
-        return res.json(result);
-      });
+
+      db.App_users.findAll()
+
+
+    .then(function(App_users) {
+      res.json(App_users);
     });
+  });
+
+
+
+
+
+
+    //   db.App_users.findOne({
+    //     where: {
+    //       id: req.params.id
+    //     }
+    //   }).then(function(App_users) {
+    //     return res.json(App_users);
+    //   });
+    // });
 
 
 
@@ -52,8 +66,8 @@ module.exports = function(app) {
           id: req.body.id
         }
       })
-    .then(function(dbApp_userInfo) {
-      res.json(dbApp_userInfo);
+    .then(function(App_users) {
+      res.json(App_users);
     });
   });
 
@@ -64,8 +78,8 @@ module.exports = function(app) {
         id: req.params.id
       }
     })
-    .then(function(dbApp_userInfo) {
-      res.json(dbApp_userInfo);
+    .then(function(App_users) {
+      res.json(App_users);
     });
   });
 
