@@ -6,8 +6,8 @@ module.exports = function(app) {
   // GET route for getting all of the user weights
   app.get("/", function(req, res) {
     db.User_weights.findAll({})
-    .then(function(dbUser_weight) {
-      res.json(dbUser_weight);
+    .then(function(User_weights) {
+      res.json(User_weights);
     });
   });
 
@@ -15,11 +15,10 @@ module.exports = function(app) {
   app.post("/api/user-weight", function(req, res) {
     console.log(req.body);
     db.User_weights.create({
-      user_name: req.body.user_name,
       user_weight: req.body.user_weight
     })
-    .then(function(dbUser_weight) {
-      res.json(dbUser_weight);
+    .then(function(User_weights) {
+      res.json(User_weights);
     });
   });
 
@@ -31,8 +30,8 @@ module.exports = function(app) {
           id: req.body.id
         }
       })
-    .then(function(dbUser_weight) {
-      res.json(dbUser_weight);
+    .then(function(User_weights) {
+      res.json(User_weights);
     });
   });
 
@@ -43,8 +42,8 @@ module.exports = function(app) {
         id: req.params.id
       }
     })
-    .then(function(dbUser_weight) {
-      res.json(User_weight);
+    .then(function(User_weights) {
+      res.json(User_weights);
     });
   });
 }

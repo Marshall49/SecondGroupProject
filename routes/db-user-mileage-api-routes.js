@@ -6,8 +6,8 @@ module.exports = function(app) {
   // GET route for getting all of the user mileages
   app.get("/", function(req, res) {
     db.Activity_mileages.findAll({})
-    .then(function(dbUser_mileage) {
-      res.json(dbUser_mileage);
+    .then(function(Activity_mileages) {
+      res.json(Activity_mileages);
     });
   });
 
@@ -15,11 +15,10 @@ module.exports = function(app) {
   app.post("/api/user-mileage", function(req, res) {
     console.log(req.body);
     db.Activity_mileages.create({
-      user_name: req.body.user_name,
-      total_mileage: req.body.total_mileage
+      activity_mileage: req.body.activity_mileage
     })
-    .then(function(dbUser_mileage) {
-      res.json(dbUser_mileage);
+    .then(function(Activity_mileages) {
+      res.json(Activity_mileages);
     });
   });
 
@@ -31,8 +30,8 @@ module.exports = function(app) {
           id: req.body.id
         }
       })
-    .then(function(dbUser_mileage) {
-      res.json(dbUser_mileage);
+    .then(function(Activity_mileages) {
+      res.json(Activity_mileages);
     });
   });
 
@@ -43,8 +42,8 @@ module.exports = function(app) {
         id: req.params.id
       }
     })
-    .then(function(dbUser_mileage) {
-      res.json(User_mileage);
+    .then(function(Activity_mileages) {
+      res.json(Activity_mileages);
     });
   });
 }

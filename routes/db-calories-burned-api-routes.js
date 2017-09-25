@@ -6,8 +6,8 @@ module.exports = function(app) {
   // GET route for getting all of the calories burned
   app.get("/", function(req, res) {
     db.User_calories.findAll({})
-    .then(function(dbUser_caloriesBurned) {
-      res.json(dbUser_caloriesBurned);
+    .then(function(User_calories) {
+      res.json(User_calories);
     });
   });
 
@@ -15,24 +15,23 @@ module.exports = function(app) {
   app.post("/api/user-calories", function(req, res) {
     console.log(req.body);
     db.User_calories.create({
-      user_name: req.body.user_name,
       calories_burned: req.body.calories_burned
     })
-    .then(function(dbUser_caloriesBurned) {
-      res.json(dbUser_caloriesBurned);
+    .then(function(User_calories) {
+      res.json(User_calories);
     });
   });
 
   // PUT route for updating user calories
-  app.put("/api/user-calories", function(req, res) {
+  app.put("/api/user-calories/:id", function(req, res) {
     db.User_calories.update(req.body,
       {
         where: {
           id: req.body.id
         }
       })
-    .then(function(dbUser_caloriesBurned) {
-      res.json(dbApp_userInfo);
+    .then(function(User_calories) {
+      res.json(User_calories);
     });
   });
 
@@ -43,8 +42,8 @@ module.exports = function(app) {
         id: req.params.id
       }
     })
-    .then(function(dbUser_caloriesBurned) {
-      res.json(User_caloriesBurned);
+    .then(function(User_calories) {
+      res.json(User_calories);
     });
   });
 }
