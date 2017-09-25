@@ -22,10 +22,12 @@ $(document).ready(function() {
 
         var div = $("<div>");
 
-        div.append("<h2>" + data[i].first_name + "</h2>");
-        div.append("<p>Author: " + data[i].author + "</p>");
-        div.append("<p>Genre: " + data[i].genre + "</p>");
-        div.append("<p>Pages: " + data[i].pages + "</p>");
+        div.append("<h2>First Name:" + data[i].first_name + "</h2>");
+        div.append("<h2>Last Name: " + data[i].last_name + "</h2>");
+        div.append("<p>City: " + data[i].city + "</p>");
+        div.append("<p>State: " + data[i].state + "</p>");
+        div.append("<p>Height: " + data[i].height + "</p>");
+        div.append("<p>Weight: " + data[i].weight + "</p>");
 
         $("#author-container").append(div);
 

@@ -5,6 +5,9 @@ var methodOverride = require("method-override");
 var passport = require("passport");
 var localStrategy = require("passport-local");
 var passportStrategy = require("passport-strategy");
+var mysql = require("mysql");
+
+var connection;
 
 
 var app = express();
@@ -36,9 +39,20 @@ require('./routes/db-html-routes.js')(app);
 // app.use("/create", routes);
 // app.use("/delete", routes);
 
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "fitbot_db"
+  });
+};
 
 
-
+connection.connect();
+module.exports = connection;
 
 
 db.sequelize.sync().then(function() {
