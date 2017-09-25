@@ -39,12 +39,12 @@ module.exports = function(app) {
     .then(function(App_users) {
       res.json(App_users);
     });
-  });
+    
 
 
 
 
-
+      })
 
     //   db.App_users.findOne({
     //     where: {

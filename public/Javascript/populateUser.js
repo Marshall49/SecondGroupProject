@@ -7,6 +7,9 @@ $(document).ready(function() {
       renderUsers(data);
 
       $("#author-container").css("color", "black");
+      $("#author-container").css({"display":"flex", "top":"100px"});
+      $("#author-container").css("font-family", "'Varela', sans-serif");
+
 
     });
 
@@ -22,12 +25,12 @@ $(document).ready(function() {
 
         var div = $("<div>");
 
-        div.append("<h2>First Name:" + data[i].first_name + "</h2>");
-        div.append("<h2>Last Name: " + data[i].last_name + "</h2>");
-        div.append("<p>City: " + data[i].city + "</p>");
-        div.append("<p>State: " + data[i].state + "</p>");
-        div.append("<p>Height: " + data[i].height + "</p>");
-        div.append("<p>Weight: " + data[i].weight + "</p>");
+        div.append("<h2>First Name:</h2>");
+        div.append("<h2>Last Name:</h2>");
+        div.append("<p>City:</p>");
+        div.append("<p>State:</p>");
+        div.append("<p>Height:</p>");
+        div.append("<p>Weight:</p>");
 
         $("#author-container").append(div);
 
