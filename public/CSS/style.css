@@ -111,19 +111,18 @@ b {
 
 
 .button {
-  /*position: relative;*/
+  position: relative;
   cursor: pointer;
-  /*padding-top: 45px;*/
-  margin-top: 60px;
+  top: 10vh;
+  left: 7%;
   color: white;
   transform: translate3d(-50%, -50%, 0);
   padding: 0.7em calc(0.7em * 1.2);
   display: inline-block;
   border: 3px solid transparent;
-  position: absolute;
-  font-size: 30px;
+  font-size: 20px;
   letter-spacing: 0.07em;
-  text-align: center;
+  text-decoration: none;
 }
 .button .text {
   font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
@@ -240,10 +239,10 @@ a:hover {
   text-decoration: none;
 }
 
-/*.about-us {
+.about-us {
   margin-left: 25%;
   margin-top: -50px;
-}*/
+}
 
 p {
   font-size: 16px;
@@ -257,6 +256,10 @@ p {
   background-color: #F05F40 !important;
 }
 
+.hidden {
+  display: hidden;
+}
+
 .bg-dark {
   color: white;
   background-color: #222222 !important;
@@ -266,9 +269,9 @@ p {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/*section {
+section {
   padding: 100px 0;
-}*/
+}
 
 hr.light {
     border-color: white;
@@ -292,15 +295,16 @@ hr.light {
   background-color: #fff;
 }
 
-.text-white {
+h2.text-white {
   font-size: 2rem;
   font-weight: 500;
 }
 
-/*.about-us {
+
+.about-us {
   margin-left: 25%;
   margin-top: -50px;
-}*/
+}
 
 p {
   font-size: 16px;
@@ -326,9 +330,9 @@ p {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/*section {
+section {
   padding: 100px 0;
-}*/
+}
 
 hr.light {
     border-color: white;
@@ -352,7 +356,7 @@ hr.light {
   background-color: #fff;
 }
 
-.text-white {
+h2.text-white {
   font-size: 2rem;
   font-weight: bold;
 }
@@ -367,9 +371,9 @@ h2 {
   padding-left: 12px;
 }
 
-/*.bio-head {
+.bio-head {
   padding-left: 25%;
-}*/
+}
 
 .contact {
   padding-top: 2%;
@@ -510,7 +514,9 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 20px;
+
 }
+
 
 label {
   display: block;
@@ -524,6 +530,8 @@ label {
   width: 40.8%;
   font-weight: bold;
 }
+
+
 
 button:hover {
     opacity: 0.8;
@@ -551,6 +559,10 @@ img.avatar {
     width: 15%;
     border-radius: 50%;
 }
+
+/*.container {
+    padding: 16px;
+}*/
 
 span.psw {
     float: right;
