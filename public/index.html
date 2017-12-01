@@ -5,61 +5,227 @@
     <title>JustRun-It</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="CSS/reset.css" rel="stylesheet">
+    <link href="CSS/hover-min copy.css" rel="stylesheet">
     <link href="CSS/style.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="Images/runningman3 copy.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
   <body>
-            <div class="mast-head">
-                <div class="nav-head">
-                    <a class="brand" href="#">
-                      <img src="Images/runningman3.png">
-                    </a>
-                </div>
-                <div class="name">
-                        <h2>JustRun-<b>It</b></h2>
+
+    <div class="back-pic">
+      <div class="container">
+          <nav class="navbar navbar-default">
+              <div class="navbar-header">
+                  <img id="logo" alt="just run it logo" src="Images/runningman3.png">
+              </div>
+              <a class="navbar-brand" href="#">JustRun-<b>It</b></a>
+      <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav"></ul>
+              <ul class="nav navbar-nav navbar-right">
+                    <button type="button" class="btn btn-signup hvr-grow">Sign Up</button>
+                    <button type="button" class="btn btn-login hvr-grow">Login</button>
+              </ul>
+
+
+
+  <div id="login">
+    <div class="flip">
+      <div class="sign">
+        <div class="form-signup">
+          <h1>Create an account</h1>
+          <fieldset>
+            <form class="sign">
+              <input type="email" id="email-input" placeholder="Enter your email address" required />
+              <input type="password" id="password-input" placeholder="Create a password" required />
+              <input type="text" placeholder="Create a display name" />
+              <input type="submit" value="Sign up" />
+            </form>
+            <a href="#" class="flipper">Already signed up? Log in.</a>
+          </fieldset>
+        </div>
+      </div>
+      <div class="login">
+        <div class="form-login">
+          <h1>Log in</h1>
+          <fieldset>
+            <form class="log">
+              <input type="email" id="log-email-input" placeholder="Enter your email address" required />
+              <input type="password" id="log-password-input" placeholder="Enter your password" required />
+              <input type="submit" value="Log in" />
+            </form>
+            <a href="#" class="flipper">Not signed up? Create an account.</a><br>
+            <a href="#">Forgot Password?</a>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+              <!-- <div class="row">
+
+          <div class="col-md-5"></div>
+          <div class="col-md-5">
+
+
+
+            <div class="flip">
+          <div class="card">
+            <div class="face front">
+
+
+
+              <div class="panel panel-default">
+
+                <form class="form-horizontal">
+
+                  <br>
+
+                  <h1 class="text-center"><img id="logo" alt="just run it logo" src="Images/runningman3.png"></h1>
+
+                  <br>
+
+                  <input class="form-control" placeholder="Username"/>
+                  <input class="form-control" placeholder="Password"/>
+                  <p class="text-right"><a href="">Forgot Password</a></p>
+                  <button class="log-but btn-primary btn-block">LOG IN</button>
+                  <hr>
+                  <p class="blue">Sign in with</p>
+
+                  <p><i class="fa fa-facebook-f fa-lg"></i><i class="fa fa-twitter fa-lg"></i></p>
+
+                  <hr>
+                  <p class="text-center">
+                    <a href="#" class="fliper-btn">Create new account?</a>
+                  </p>
+                </form>
+
+              </div>
+
+
+            </div>
+            <div class="face back">
+
+
+                <div class="panel panel-default">
+
+                <form class="form-horizontal">
+
+                  <br>
+
+                  <h1 class="text-center">LOGO</h1>
+
+                  <br>
+                  <label>Basic Information</label>
+                  <input class="form-control" placeholder="Fullname"/>
+                  <input class="form-control" placeholder="Email"/>
+                  <label>Private Information</label>
+                  <input class="form-control" placeholder="Password"/>
+                  <input class="form-control" placeholder="Mobile Number"/>
+                  <button class="btn btn-primary btn-block">SIGN UP</button>
+
+
+                  <p class="text-center">
+                    <a href="#" class="fliper-btn">Already have an account?</a>
+                  </p>
+
+                </form>
+
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+          </div>
+
+
+        </div> -->
+
+
+          <!-- <div id="cont_principal">
+                <div class="cont_centrar">
+                    <div class="cont_login">
+                        <form id="reg" action="" method="POST">
+                            <div class="cont_tabs_login">
+                                <ul class='ul_tabs'>
+                                <li class="active"><a href="#" onclick="sign_in()">SIGN IN</a>
+                                <span class="linea_bajo_nom"></span>
+                                </li>
+                                <li><a href="#" onclick="sign_up()">SIGN UP</a><span class="linea_bajo_nom"></span></li>
+                                </ul>
+                            </div>
+                  <div class="cont_text_inputs">
+                        <input type="text" class="input_form_sign " placeholder="USERNAME" id="username" name="username_us" />
+                        <input type="text" class="input_form_sign d_block active_inp" placeholder="EMAIL" id="email" name="emauil_us" />
+                        <input type="password" class="input_form_sign d_block  active_inp" placeholder="PASSWORD" id="password" name="pass_us" />
+                        <input type="password" class="input_form_sign" placeholder="CONFIRM PASSWORD" id="confirm-password" name="conf_pass_us" />
+                    <a href="#" class="link_forgot_pass d_block" >Forgot Password ?</a>
+                    <div class="terms_and_cons d_none">
+                      <p><input type="checkbox" name="terms_and_cons" style="margin: 4px;" /> <label for="terms_and_cons" style="color: black;">Accept  Terms and Conditions.</label></p>
+                    </div>
                   </div>
-                <div id="navbar" class="navbar-collapse collapse">
-
-                    <ul class="nav navbar-nav pull-right" style="margin-top: -37px;">
-                        <li class="login"><a onclick="document.getElementById('id01').style.display='block'" href="#">Log In</a>
-                        </li>
-                        <li class="signup"><a onclick="document.getElementById('id02').style.display='block'" href="#">Sign Up</a></li>
-                    </ul>
-                </div>
-
-
-              <div class="Header">
-                  <center>
-                      <h1><b>Run.</b> Eat. <br> Sleep. <b>Repeat.</b></h1>
-                <hr class="colored">
-                <div class="button">
-                        <center>
-                      <a>
-                        <span class="text">Learn More</span>
-                        <span class="line -right"></span>
-                        <span class="line -top"></span>
-                        <span class="line -left"></span>
-                        <span class="line -bottom"></span>
-                    </a>
+                <div class="cont_btn">
+                   <button class="btn_sign">SIGN IN</button>
                   </div>
+                </form>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </nav>
+
+
+
+              <div class="row">
+                  <div class="col-12">
+                      <div class="main-header">
+                        <h1><b>Run.</b>Eat.<br>Sleep.<b>Repeat.</b></h1>
+                    </div>
+                <br>
+                <div class"col-9">
+                    <div class="small-header">
+                        <h4>Don’t just chase your dreams…<br>Run them down!</h4>
+                  </div>
+                </div>
+              </div>
+              <hr class="colored">
+            <div class="row">
+                <div class="col-12">
+                <br>
+                <br>
+                <center>
+                 <a class="butt btn-default btn-xl js-scroll-trigger" href="#services">Learn More</a>
               </div>
           </div>
-                  <section class="bg-primary">
+        </div>
+      </div>
+    </div>
+
+              <section class="bg-primary">
+                <center>
                    <div class="about-us">
                      <div class="row">
-                       <div class="col-lg-8 mx-auto text-center">
+                       <div class="col-lg-12">
                          <h2 class="section-heading text-white">About JustRun-It!</h2>
                          <hr class="light">
-                         <p>JustRun-It! Is a Web Application that allows individuals who love to run, be able to log their status over a period of time and will be able to see fitness suggestions throughout the course of their use of the app so that they can get the best results
+                         <div class="p-color">
+                         <p> JustRun-It! Is a Web Application that allows individuals who love to run, be able<br> to log their status over a period of time and will be able to see fitness suggestions <br>throughout the course of their use of the app so that they can get the best results</p>
+                          <br>
                             <p>Technologies Used: HTML | CSS | Javascript/JQuery | Node.JS | Express | MySQL | </p>
-                         </p>
+                          </div>
+                         <br>
                          <a class="btn btn-default btn-xl js-scroll-trigger" href="#services">Meet The Team</a>
                        </div>
                      </div>
@@ -67,139 +233,56 @@
                  </section>
 
 
-                 <section class="team">
 
-                    <div class="row">
-                      <div class="col-lg-12 mx-auto text-center">
-                        <h2 class="section-heading text-white">Developers</h2>
-                        <hr class="orange">
-                      </div>
-                    </div>
+   <section class="team">
+        <div class="row">
+          <div class="col-lg-12 mx-auto text-center" style="margin-left: 9px;">
+            <h2 class="section-heading text-white" style="font-size: 25px; color: black;">Developers</h2>
 
-                        <div class="bio-head">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <img src="Images/malcolmstrong copy.png">
-                              <br>
-                              <h2 style="padding-left: 17px; font-weight: bold; font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;">Malcolm Strong</h2>
-                              <h2 style="padding-left: 3px; font-weight: bold; font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;">Full Stack Developer</h2>
-                              <br>
-                              <div class="social-btns">
-                                <a class="btn facebook" href="https://www.facebook.com/malcolm.j.strong" target="_blank"><i class="fa fa-facebook"></i></a>
-                                <a class="btn twitter" href="https://twitter.com/strongmalcolm3" target="_blank"><i class="fa fa-twitter"></i></a>
-                                <a class="btn github" href="https://github.com/Marshall49" target="_blank"><i class="fa fa-github"></i></a>
-                                <a class="btn linkedin" href="https://www.linkedin.com/in/malcolm-strong-78088a105/" target="_blank" ><i class="fa fa-linkedin"></i></a>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <img src="Images/safiyya2.png">
-                              <br>
-                              <h2 style="padding-left: 25px; font-weight: bold; font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;">Safiyya Sharif</h2>
-                              <h2 style="padding-left: 3px; font-weight: bold; font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;">Full Stack Developer</h2>
-                              <br>
-                              <div class="social-btns">
-                                <a class="btn facebook" href="https://www.facebook.com/RunnersWorld/" target="_blank"><i class="fa fa-facebook"></i></a>
-                                <a class="btn twitter" href="https://twitter.com/FSTechFriend" target="_blank"><i class="fa fa-twitter"></i></a>
-                                <a class="btn github" href="https://github.com/ssharif10" target="_blank"><i class="fa fa-github"></i></a>
-                                <a class="btn linkedin" href="https://www.linkedin.com/in/safiyya-sharif-cpim/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                    </section>
-
-        <div id="id01" class="modal">
-
-              <form class="modal-content animate" action="" method="POST">
-                    <div class="imgcontainer">
-                        <img src="Images/runningman3 login.png" alt="Avatar" class="avatar">
-                          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                    </div>
-
-              <div class="container">
-                      <label>Username</label>
-                  <input type="text" id="log-user" placeholder="Enter Username" name="uname" required>
-
-                      <label>Password</label>
-                  <input type="password" id="log-pass" placeholder="Enter Password" name="psw" required>
-
-                    <div id="login">
-              <button type="submit" id="log-button"><a onclick="document.getElementById('id01').style.display='none'">Login</a></button>
+            <hr class="orange">
+          </div>
+        </div>
+            <div class="row">
+                <div class="move">
+                <div class="col-sm-6">
+                  <img src="Images/malcolmstrong copy.png">
+                  <br>
+                  <!-- <div class="font"> -->
+                  <h2>Malcolm Strong</h2>
+                  <h2>Full Stack Developer</h2>
+                <!-- </div> -->
+                  <br>
+                  <div class="social-btns">
+                    <a class="btn facebook" href="https://www.facebook.com/malcolm.j.strong" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a class="btn twitter" href="https://twitter.com/strongmalcolm3" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a class="btn github" href="https://github.com/Marshall49" target="_blank"><i class="fa fa-github"></i></a>
+                    <a class="btn linkedin" href="https://www.linkedin.com/in/malcolm-strong-78088a105/" target="_blank" ><i class="fa fa-linkedin"></i></a>
                   </div>
-
-
-                    <div id="check">
-                        <input type="checkbox" checked="checked"> Remember me
-                    </div>
-                  </div>
-
-            <div id="footer">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                          <span class="psw">Forgot <a href="#">password?</a></span>
-                    </div>
-                </form>
-            </div>
-            <!-- //SignUp Modal Box -->
-
-            <div id="id02" class="modal2">
-
-                  <form class="modal-content2 animate" action="" method="POST" role="form">
-                        <div class="imgcontainer2">
-                              <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">&times;</span>
-                       </div>
-
-                  <div class="container2">
-                      <div class="header2">
-                        <h2>Sign<b>U</b>p</h2>
-                      </div>
-                          <label>First Name</label>
-                      <input type="text2" id="firstName" placeholder="First Name" name="uname2" required>
-
-                          <label>Last Name</label>
-                      <input type="text2"  id="lastName" placeholder="Last Name" name="uname2" required>
-
-                          <label>Create Username</label>
-                      <input type="text2" id="userName" placeholder="Create Username" name="uname2" required>
-
-                          <label>Create Password</label>
-                      <input type="password2" id="passWord" placeholder="Create Password" name="psw2" required>
-
-                          <label>City</label>
-                      <input type="text2" id="userCity" placeholder="City" name="uname2" required>
-
-                          <label>State</label>
-                      <input type="text2" id="userState" placeholder="State Ex. AZ" name="uname2" required>
-
-                          <label>Zip Code</label>
-                      <input type="text2" id="userZip" placeholder="Zip Code" name="uname2" required>
-
-                           <label>Height</label>
-                      <input type="text2" id="userHeight" placeholder="Height Ex. 5ft 2in" name="uname2" required>
-
-                          <label>Weight</label>
-                      <input type="text2" id="userWeight" placeholder="Weight" name="uname2" required>
-
-
-                        <div id="signup2">
-                  <button type="submit" id="register-button"class="signupbut">Register</button>
-                      </div>
-
-
-                <div id="footer2">
-                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
-                        </div>
-                    </form>
                 </div>
+                <div class="col-sm-6">
+                  <img src="Images/safiyya2.png">
+                  <br>
+                  <!-- <div class="font"> -->
+                  <h2>Safiyya Sharif</h2>
+                  <h2>Full Stack Developer</h2>
+                <!-- </div> -->
+                  <br>
+                  <div class="social-btns">
+                    <a class="btn facebook" href="https://www.facebook.com/RunnersWorld/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a class="btn twitter" href="https://twitter.com/FSTechFriend" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a class="btn github" href="https://github.com/ssharif10" target="_blank"><i class="fa fa-github"></i></a>
+                    <a class="btn linkedin" href="https://www.linkedin.com/in/safiyya-sharif-cpim/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
-
-
-
-
-              <!-- //End of Signup Modal -->
+        </section>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="Javascript/add.js"></script>
-    <script src="Javascript/met-display.js"></script>
-    <script src="Javascript/modal.js"></script>
+    <script src="Javascript/user.js"></script>
+    <script src="Javascript/runner.js"></script>
+    <script src="Javascript/newmodal.js"></script>
+    <script src="Javascript/signup.js"></script>
+    <script src="Javascript/all-click.js"></script>
   </body>
 </html>

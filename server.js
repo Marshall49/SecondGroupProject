@@ -1,43 +1,28 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var path = require("path");
 var methodOverride = require("method-override");
-var passport = require("passport");
-var localStrategy = require("passport-local");
-var passportStrategy = require("passport-strategy");
+var passport = require("./config/passport");
+var session = require("express-session");
 var mysql = require("mysql");
-
-var connection;
-
 
 var app = express();
 var PORT = process.env.PORT || 8080;
 
-app.use(methodOverride("_method"));
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text());
-app.use(bodyParser.json({ type: "application/vnd.api+json" }));
-
-
-
 var db = require("./models");
 
-// Static directory
+var app = express();
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 app.use(express.static("public"));
+// We need to use sessions to keep track of our user's login status
+app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
 
-
-require('./routes/db-calories-burned-api-routes.js')(app);
-require('./routes/db-new-user-api-routes.js')(app);
-require('./routes/db-user-mileage-api-routes.js')(app);
-require('./routes/db-user-weight-api-routes.js')(app);
-require('./routes/db-html-routes.js')(app);
-
-
-// app.use("/update", routes);
-// app.use("/create", routes);
-// app.use("/delete", routes);
+// Requiring our routes
+require("./routes/html-routes.js")(app);
+require("./routes/user-api-routes.js")(app);
+// require("./routes/milesran-api-routes.js")(app);
 
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
@@ -46,10 +31,11 @@ if (process.env.JAWSDB_URL) {
     host: "localhost",
     user: "root",
     password: "",
-    database: "fitbot_db"
+    database: "justrunit_db"
   });
 };
 
+var connection;
 
 connection.connect();
 module.exports = connection;

@@ -1,433 +1,79 @@
-
-.container-fluid {
-  background-color: #f2f2f2;
-  position: relative;
-  padding: 0px;
+body {
+	font-family: 'Varela Round', sans-serif;
 }
 
-.navbar {
-  background-color: white;
-  color: white;
-  border-radius: 0px;
-  height: 10%;
-  padding-top: 10px;
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-}
-
-.navbar-brand {
-  padding-left: 5%;
-}
-
-.logo-link {
-  padding: 0px;
-  width: 400px;
-}
-
-.logo {
-  position: relative;
-  width: 100px;
-}
-
-#logo-image {
-  display: inline;
-  height: 45px;
-  width: 50px;
-  margin-left: 10px;
-
-}
-
-#logo-text {
-  position: absolute;
-  top: 30%;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 25px;
-  font-weight: bold;
+h1,h2,h3,h4,h5 {
   color: black;
+}
+
+.button {
+  text-align: center;
+  margin-top: 15px;
+  border: none;
+	border-radius: 5px;
+}
+
+.btn {
+  background-color: #F05F40;
+  border: none;
+	border-radius: 5px;
+  color: #fff;
   margin-left: 10px;
 }
 
 b {
-  color: #F05F40;
+  color: #F05F40 ;
 }
 
-ul li {
-  float: right;
-  display: inline-block;
-  margin-right: 35px;
-  padding-top: 15px;
+#logo {
+	height:80px;
+	width:80px;
+	padding: 0px;
+	margin-right: 10px;
+}
+
+.navbar-default .navbar-brand {
+  color: black;
+  margin-top: 10px;
   font-size: 20px;
-  font-family: 'Varela Round', sans-serif;
+  font-weight: 800;
 }
 
-.links:link {
-  padding-top: 25px;
-
-}
-
-.links {
-    font-weight: bold;
-    padding-top: 25px;
-    color: black;
-}
-
-.links:visited {
-  padding-top: 25px;
-  color: black;
-}
-
-.links:hover {
-    padding-top: 25px;
-    color: black;
-}
-
-.links:active {
-  padding-top: 25px;
-  color: black;
-}
-
-.orange-border {
-  border-width: 20px;
-  border-radius: 20px;
-  background-color: #F05F40;
-  border: 10px solid #F05F40;
-  position: relative;
-  bottom: 10px;
-}
-
-
-input[type=text2], input[type=password2] {
-    width: 93%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid black;
-    box-sizing: border-box;
-}
-
-.header2 {
-  text-align: center;
-  font-size: 26px;
-  color: black;
-  font-family: 'Varela Round', sans-serif;
-  padding-bottom: 3%;
-  text-decoration: underline;
-
-}
-
-#check2 {
-
-  font-family: 'Varela Round', sans-serif;
-}
-/* Set a style for all buttons */
-button {
-    background-color: #70b5fa;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 93%;
-}
-
-label {
-  display: block;
-  color: black;
-  font-family: 'Varela Round', sans-serif;
-  text-decoration: underline;
-}
-
-#signup2 {
-  font-family: 'Varela Round', sans-serif;
-
-}
-
-.signupbut {
-  width: 93%;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-#footer2 {
-  padding: 16px;
-  border: none;
-  margin-left: 0.5px;
-  width: 93%;
-  background-color:#f2f2f2;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn2 {
-    width: 25%;
-    margin-left: 37%;
-    padding: 10px 18px;
-    background-color: #f44336;
-    font-family: 'Varela Round', sans-serif;
-}
-
-/* Center the image and position the close button */
-.imgcontainer2 {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-}
-
-.container2 {
-    padding: 16px;
-}
-
-span.psw2 {
-    float: right;
-    padding-top: 16px;
-    font-family: 'Varela Round', sans-serif;
-}
-
-/* The Modal (background) */
-.modal2 {
-    display: none;
-    position: fixed;
-    z-index: 5;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    padding-top: 60px;
-    margin: auto;
-}
-
-/* Modal Content/Box */
-.modal-content2 {
-    background-color: #E6E6E6;
-    margin: 5% auto 15% auto;
-    border: 1px solid #888;
-    width: 50%;
-    opacity: -4px;
-}
-
-/* The Close Button (x) */
-.close2 {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.close2:hover,
-.close2:focus {
-    color: red;
-    cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-    -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
-}
-
-@keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    span.psw2 {
-       display: block;
-       float: none;
-    }
-    .cancelbtn2 {
-       width: 100%;
-    }
-}
-
-.foot {
-  padding-top: 50px;
-  font-size: 30px;
-  color: white;
-  background-color: white;
-  width: 100%;
-  text-align: center;
-  margin-top: 500px;
-  padding-bottom: 20px;
-}
-
-#follow-text {
-  font-weight: bold;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 10px;
-  position: relative;
-  bottom: 15px;
-  text-align: center;
-  color: black;
-}
-
-hr.colored {
-  border: solid 1.5px #F05F40;
-}
-
-hr {
-  max-width: 55px;
-  text-align: center;
-  margin-top: -70px;
-
-}
-
-#follow-copyright {
-  bottom: 30%;
-  font-weight: bold;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 30px;
-  float: right;
-  padding-right: 100px;
-  position: relative;
-  bottom: 20px;
-
-}
-
-
-
-@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
-.social-btns .btn,
-.social-btns .btn:before,
-.social-btns .btn .fa {
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
-  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
-          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
-}
-.social-btns .btn:before {
-  top: 90%;
-  left: -110%;
-}
-.social-btns .btn .fa {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
-}
-.social-btns .btn.facebook:before {
-  background-color: #3b5998;
-}
-.social-btns .btn.facebook .fa {
-  margin: -10px;
-  margin-bottom: 12px;
-  color: #3b5998;
-}
-.social-btns .btn.twitter:before {
-  background-color: #3cf;
-}
-.social-btns .btn.twitter .fa {
-  margin: -10px;
-  margin-bottom: 12px;
-  color: #3cf;
-}
-
-.social-btns .btn.github:before {
-  background-color: black;
-}
-.social-btns .btn.github .fa {
-  margin: -10px;
-  margin-bottom: 12px;
-  color: black;
-}
-
-.social-btns .btn.linkedin:before {
-  background-color: #007bb5;
-}
-.social-btns .btn.linkedin .fa {
-  margin: -10px;
-  margin-bottom: 15px;
-  color: #007bb5;
-}
-.social-btns .btn:focus:before,
-.social-btns .btn:hover:before {
-  top: -10%;
-  left: -10%;
-}
-.social-btns .btn:focus .fa,
-.social-btns .btn:hover .fa {
+.navbar-default .navbar-brand:hover {
   color: #fff;
-  -webkit-transform: scale(1);
-          transform: scale(1);
 }
-.social-btns {
-  height: 1px;
-  margin: auto;
-  font-size: 0;
-  padding-left: 547px;
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.navbar-right {
+  margin-top: 20px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #fff;
+  background-color: #F05F40;
+}
+
+.navbar-default {
+  background-color: transparent;
+  border: none;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.footer {
   position: absolute;
-  top: 10;
   bottom: 0;
-  left: 0;
-  right: 0;
-}
-.social-btns .btn {
-  display: inline-block;
-  background-color: #fff;
-  width: 40px;
-  height: 40px;
-  line-height: 50px;
-  margin: 0 10px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  border-radius: 28%;
-  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
-  opacity: 0.99;
-}
-.social-btns .btn:before {
-  content: '';
-  width: 120%;
-  height: 120%;
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.social-btns .btn .fa {
-  font-size: 38px;
-  vertical-align: middle;
-}
-
-.container {
-  position: relative;
-  height: 50%;
   width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: transparent;
 }
 
-.title h2 {
-  padding-top: 90px;
+.text-muted {
   color: black;
-  text-align: center;
-  font-family: 'Varela', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.title img {
-padding-left: 500px;
-}
-
-.headers h2 {
-  padding-top: 60px;
-  text-align: center;
-  font-family: 'Varela Round', sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.author-container {
-  /*margin-top: 50px;*/
-  font-family: 'Varela', sans-serif;
-  font-size: 17px;
 }
